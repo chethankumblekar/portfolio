@@ -1,36 +1,43 @@
 [
-    {
-        "from": "May 2023",
-        "to": "July 2023",
-        "company": "Quinbay",
-        "position": "Software Engineering Intern",
-        "experience": [
-            "Implemented a three-step financial wizard feature using Vue and VueX, streamlining the acquisition and management of company’s financial data. Led development and integrated data validation for accuracy and reliability.",
-            "Enhanced login flow with specialized functionality for Board of Directors members. Implemented automatic redirection to invite page for pending invitations."
-        ],
-        "id": 3
-    },
-    {
-        "from": "June 2022",
-        "to": "July 2022",
-        "company": "miniOrange",
-        "position": "Software Engineering Intern",
-        "experience": [
-            "Developed an application to seamlessly display user information from their Metamask wallet enhancing accessibility and convenience for users.",
-            "Engineered a streamlined one-click login flow, leveraging NextJS, Metamask API, Supabase, and ethers.js, to facilitate a secure and efficient authentication process.",
-            "Implemented advanced cryptographic techniques, including nonce and JWT, to generate digital signatures, ensuring the integrity and authenticity of user transactions."
-        ],
-        "id": 2
-    },
-    {
-        "from": "Dec 2021",
-        "to": "Jan 2022",
-        "company": "Winter of Code 2.0 - Moja Global",
-        "position": "Open Source Contributor",
-        "experience": [
-            "Worked on the complete UI overhaul for the Community Website by using React and Docusaurus to elevate the overall user experience. Also optimized performance and accessibility, resulting in a near-perfect score of nearly 100 on Google’s Lighthouse evaluation.",
-            "Optimized and Refactored the Roadmaps page and Footer to adapt to a modern design using ReactJS"
-        ],
-        "id": 1
-    }
+  {
+    "from": "Jan 2023",
+    "to": "present",
+    "company": "Vela Technologies India",
+    "position": "Software Engineering",
+    "experience": [
+      "Developed access control in react to enable secured access over resources and operations, Developed Rest APIs for the same.",
+      "Developed Template Page with Send Email using Twilio SendGrid.",
+      "Converted classic release to yaml pipeline-based release in azure DevOps.",
+      "Migrated Application Gateway configuration from AZ commands to bicep for handling it for all the tenants in one shot thereby reduced deployment time from approx.1.2 Hours to 5 - 10 min.",
+      "Enabled high availability for selected customers to improve SLA."
+    ],
+    "id": 3
+  },
+  {
+    "from": "Jul 2022",
+    "to": "Dec 2023",
+    "company": "Vela Technologies India",
+    "position": "Associate Software Engineer",
+    "experience": [
+      "Rest API design and development using .net core with Test Driven Development.",
+      "Migrated Server Components from .NET framework to .NET Core",
+      "Integrated Application Insights across all the components in product that helped easy debugging and failures.",
+      "Implemented REST APIs with ASP.NET Core and writing test cases, playing a crucial role in the development of an API key solution.",
+      "Configured webhooks for getting the runbooks status. And used SignalR for implementing notification service.",
+      "Migrated react web apps from material Ui v4 to v5.",
+      "Configured CI and CD with pipeline to deploy components to Azure app services."
+    ],
+    "id": 2
+  },
+  {
+    "from": "Mar 2022",
+    "to": "Jul 2022",
+    "company": "Vela Technologies India",
+    "position": "Trainee Software Engineer (Intern)",
+    "experience": [
+      "Worked on an integration project called File Share, backend developed using .NET Core Web API and fonted end is experimented among two technologies React Typescript and ASP.NET Core Blazor WebAssembly, along with that used cosmos Db for record storage and Azure blob storage. integrated with Azure B2C for enabling secured access over files and handled role based authorization for accessing blobs ",
+      "handled whole Porject"
+    ],
+    "id": 1
+  }
 ]
