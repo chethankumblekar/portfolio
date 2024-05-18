@@ -21,7 +21,7 @@ const AboutCard = () => {
         <CardRole>software developer</CardRole>
         <AboutCardFooter>
           <Link
-            to="https://www.linkedin.com/in/chethan-k-901078170/"
+            to="https://www.linkedin.com/in/chethankumblekar"
             target="_blank"
             rel="noopener noreferrer">
             <Linkedin width="28" height="28" />

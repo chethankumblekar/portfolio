@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
             <IconsContainer>
               <Link
-                to="https://www.linkedin.com/in/chethan-k-901078170/"
+                to="https://www.linkedin.com/in/chethankumblekar"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Linkedin width="22" height="22" />
