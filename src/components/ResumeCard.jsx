@@ -4,6 +4,7 @@ const ResumeCard = ({ content }) => {
   const {
     from = null,
     to = null,
+    icon = null,
     company = null,
     position = null,
     experience = null,
@@ -17,6 +18,7 @@ const ResumeCard = ({ content }) => {
         <div className="details">
           <h4 className="timeline">{from && to ? `${from} - ${to}` : year}</h4>
           {position && <p className="job-title">{position}</p>}
+          <img src={icon} width="30px" height="30px" />
           <p className="company-name">{company ? company : organization}</p>
         </div>
         <div className="description">

@@ -4,20 +4,14 @@ import { Heading, ResumeContent, ResumeWrapper, SubHeading } from '../styles/Res
 import ResumeCard from '../components/ResumeCard'
 import { useState, useEffect } from 'react'
 import experiences from '../data/experience.json'
-import communities from '../data/community.json'
-import achivements from '../data/achivements.json'
 
 const Resume = () => {
   const [experience, setExperience] = useState(null)
-  const [community, setCommunity] = useState(null)
-  const [achivement, setAchivement] = useState(null)
   const resumeLink = 'https://shorturl.at/fC2mo'
 
   useEffect(() => {
     setExperience(experiences)
-    setCommunity(communities)
-    setAchivement(achivements)
-  }, [experiences, communities, achivements])
+  }, [experiences])
   return (
     <>
       <ResumeWrapper>
@@ -35,18 +29,6 @@ const Resume = () => {
             </StyledButton>
           </SubHeading>
           {experience?.map((data, index) => {
-            return <ResumeCard content={data} key={index} />
-          })}
-          <SubHeading>
-            <h2>Communities</h2>
-          </SubHeading>
-          {community?.map((data, index) => {
-            return <ResumeCard content={data} key={index} />
-          })}
-          <SubHeading>
-            <h2>Achievements</h2>
-          </SubHeading>
-          {achivement?.map((data, index) => {
             return <ResumeCard content={data} key={index} />
           })}
         </ResumeContent>
