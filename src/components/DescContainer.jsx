@@ -7,9 +7,9 @@ const DescContainer = () => {
   return (
     <>
       <DescWrapper>
-        <Heading>Hi,</Heading>
+        <Heading>Hey!</Heading>
         <SubHeading>
-          {emoji.emojify(':thinking:')}Oh. something dragged! It&apos;s great to have you here!
+          {emoji.emojify(':thinking:')} something got you It&apos;s great to have you here!
         </SubHeading>
         <div style={{ marginBottom: '30px' }}>
           <Link to="resume">
