@@ -19,7 +19,7 @@ const Footer = () => {
           <p>
             By <strong>Chethan K</strong>
           </p>
-          <p>No © copyright</p>
+          <p>No © copyright 😉</p>
         </LicenceContainer>
         <SocialContainer>
           <SocialItem>

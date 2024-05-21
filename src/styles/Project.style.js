@@ -10,7 +10,7 @@ export const ProjectWrapper = styled.div`
   justify-content: center;
   padding-bottom: 100px;
   min-height: 80vh;
-  background-color: rgb(230, 218, 206);
+  background-color: rgb(205, 232, 229);
   animation: fade_in 1s;
 `
 export const ProjectsContent = styled(ResumeContent)`

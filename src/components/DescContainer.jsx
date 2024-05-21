@@ -1,18 +1,22 @@
 import { Link } from 'react-router-dom'
-import { BioText, DescWrapper, Heading, SubHeading } from '../styles/Home.style'
+import { BioText, DescWrapper, Heading } from '../styles/Home.style'
 import Button from './Button'
-import * as emoji from 'node-emoji'
 
 const DescContainer = () => {
   return (
     <>
       <DescWrapper>
-        <Heading>Hey!</Heading>
-        <SubHeading>
-          {emoji.emojify(':thinking:')} something got you It&apos;s great to have you here!
-        </SubHeading>
-        <div style={{ marginBottom: '30px' }}>
-          <Link to="resume">
+        <Heading>Hello!</Heading>
+        <div style={{ marginTop: '30px' }}>
+          <BioText>
+            I&apos;m A Full Stack Software Developer with a robust skill set in React, REST API
+            development. Proficient in .NET Core and Azure with Experience in working with azure
+            cloud automation.
+          </BioText>
+          <BioText>I always ❤️ to deliver what i passion about. and my passion is 👨‍💻</BioText>
+        </div>
+        <div style={{ marginTop: '50px' }}>
+          <Link to="experience">
             <Button>Resume</Button>
           </Link>
           <Link to="projects">
@@ -21,15 +25,6 @@ const DescContainer = () => {
             </Button>
           </Link>
         </div>
-        <BioText>
-          I&apos;m A Full Stack Software Developer with a robust skill set in React, REST API
-          development. Proficient in .NET Core and Azure with Experience in working with azure cloud
-          automation.
-        </BioText>
-        <BioText>
-          I always {emoji.emojify(':heart:')} to deliver what i passion about. and my passion is
-          <span>{emoji.emojify(':computer: :keyboard:')} </span>
-        </BioText>
       </DescWrapper>
     </>
   )

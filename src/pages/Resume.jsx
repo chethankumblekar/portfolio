@@ -5,7 +5,7 @@ import ResumeCard from '../components/ResumeCard'
 import { useState, useEffect } from 'react'
 import experiences from '../data/experience.json'
 
-const Resume = () => {
+const Experience = () => {
   const [experience, setExperience] = useState(null)
   const resumeLink = 'https://shorturl.at/fC2mo'
 
@@ -17,11 +17,10 @@ const Resume = () => {
       <ResumeWrapper>
         <Heading>
           <GeometricShape />
-          <h1>Resume</h1>
+          <h1>Experience</h1>
         </Heading>
         <ResumeContent>
           <SubHeading>
-            <h2>Experience</h2>
             <StyledButton width="150px" size="10px">
               <a href={resumeLink} target="_blank" rel="noopener noreferrer">
                 Download CV
@@ -37,4 +36,4 @@ const Resume = () => {
   )
 }
 
-export default Resume
+export default Experience

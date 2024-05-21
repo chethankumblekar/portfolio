@@ -29,8 +29,8 @@ const NavbarDesktop = () => {
             <NavLink to="/">
               <NavMenuItem>about me</NavMenuItem>
             </NavLink>
-            <NavLink to="/resume">
-              <NavMenuItem>resume</NavMenuItem>
+            <NavLink to="/experience">
+              <NavMenuItem>experience</NavMenuItem>
             </NavLink>
             <NavLink to="/projects">
               <NavMenuItem>projects</NavMenuItem>

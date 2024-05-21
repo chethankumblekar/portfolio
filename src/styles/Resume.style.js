@@ -3,7 +3,7 @@ import { devices } from '../constants'
 
 export const ResumeWrapper = styled.div`
   min-height: 80vh;
-  background-color: rgb(230, 218, 206);
+  background-color: rgb(205, 232, 229);
   display: flex;
   flex-direction: column;
   align-items: center;

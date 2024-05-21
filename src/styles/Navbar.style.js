@@ -106,7 +106,7 @@ export const StyledMobileNav = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(244, 236, 230);
+    background-color: rgb(238, 247, 255);
     animation: fade_in 0.5s;
   }
 

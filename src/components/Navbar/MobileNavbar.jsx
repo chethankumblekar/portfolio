@@ -47,7 +47,7 @@ const MobileNavbar = () => {
           <NavLink to="/">
             <NavMenuItem onClick={toggleMenu}>about me</NavMenuItem>
           </NavLink>
-          <NavLink to="/resume">
+          <NavLink to="/experience">
             <NavMenuItem onClick={toggleMenu}>resume</NavMenuItem>
           </NavLink>
           <NavLink to="/projects">

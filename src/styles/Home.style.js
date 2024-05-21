@@ -6,8 +6,8 @@ export const HomeWrapper = styled.div`
   height: 80vh;
   background: linear-gradient(
     to right,
-    rgb(230, 218, 206) 0%,
-    rgb(230, 218, 206) 40%,
+    rgb(205, 232, 229) 0%,
+    rgb(205, 232, 229) 40%,
     #fff 40%,
     #fff 100%
   );
@@ -21,8 +21,8 @@ export const HomeWrapper = styled.div`
       to bottom,
       #fff 0%,
       #fff 30%,
-      rgb(230, 218, 206) 30%,
-      rgb(230, 218, 206) 100%
+      rgb(205, 232, 229) 30%,
+      rgb(205, 232, 229) 100%
     );
     height: fit-content;
     padding: 11px 10px;
@@ -33,7 +33,7 @@ export const HomeWrapper = styled.div`
 export const AboutCardWrapper = styled.div`
   width: 375px;
   height: 525px;
-  background-color: rgb(244, 236, 230);
+  background-color: rgb(238, 247, 255);
   box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px 0px;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ export const DescWrapper = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: 100px;
+  font-size: 80px;
   @media ${devices.tablet} {
     font-size: 50px;
   }
