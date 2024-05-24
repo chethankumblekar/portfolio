@@ -7,7 +7,8 @@ import experiences from '../data/experience.json'
 
 const Experience = () => {
   const [experience, setExperience] = useState(null)
-  const resumeLink = 'https://shorturl.at/fC2mo'
+  const resumeLink =
+    'https://drive.google.com/file/d/1ircVHWoD31QWqY4xN_sV1REyI1aapE8R/view?usp=drive_link'
 
   useEffect(() => {
     setExperience(experiences)
