@@ -2,44 +2,50 @@
   {
     "from": "Jan 2023",
     "to": "present",
-    "icon": "https://media.licdn.com/dms/image/C510BAQEQDxxgkxOZEg/company-logo_200_200/0/1631439884043/vela_technologies_india_llp_logo?e=1724284800&v=beta&t=e-rbP9jOdMleTpxOQejsQEWC2TrFzH8N_95NZTbVaSw",
+    "icon": "https://d1hbpr09pwz0sk.cloudfront.net/logo_url/vela-technologies-india-9562d2ee",
     "company": "Vela Technologies India",
     "position": "Software Engineering",
     "experience": [
-      "Developed access control in react to enable secured access over resources and operations, Developed Rest APIs for the same.",
-      "Developed Template Page with Send Email using Twilio SendGrid.",
-      "Converted classic release to yaml pipeline-based release in azure DevOps.",
-      "Migrated Application Gateway configuration from AZ commands to bicep for handling it for all the tenants in one shot thereby reduced deployment time from approx.1.2 Hours to 5 - 10 min.",
-      "Enabled high availability for selected customers to improve SLA."
+      "Gathered and analyzed requirements by collaborating with project managers, senior developers, and testers.",
+      "Participated in sprint planning, breaking down requirements into user stories and tasks.",
+      "Designed and developed REST APIs using .NET core.",
+      "Experienced in Entity Framework and Migration to EF Core.",
+      "Created and maintained integration tests and unit tests for REST APIs, enhancing code quality.",
+      "Managed deployments, handled Azure infrastructure and optimized scripts to reduce deployment time by 15%.",
+      "Resolved production issues, improving application stability.",
+      "Managed SQL Server databases, optimizing queries for better performance",
+      "Integrated SonarQube and OWASP dependency check in build pipelines there by increased security and code quality.",
+      "Migated api project from .NET framework 4.7.2 to .NET 8"
     ],
     "id": 3
   },
   {
     "from": "Jul 2022",
     "to": "Dec 2023",
-    "icon": "https://media.licdn.com/dms/image/C510BAQEQDxxgkxOZEg/company-logo_200_200/0/1631439884043/vela_technologies_india_llp_logo?e=1724284800&v=beta&t=e-rbP9jOdMleTpxOQejsQEWC2TrFzH8N_95NZTbVaSw",
+    "icon": "https://d1hbpr09pwz0sk.cloudfront.net/logo_url/vela-technologies-india-9562d2ee",
     "company": "Vela Technologies India",
     "position": "Associate Software Engineer",
     "experience": [
-      "Rest API design and development using .net core with Test Driven Development.",
-      "Migrated Server Components from .NET framework to .NET Core",
-      "Integrated Application Insights across all the components in product that helped easy debugging and failures.",
-      "Implemented REST APIs with ASP.NET Core and writing test cases, playing a crucial role in the development of an API key solution.",
-      "Configured webhooks for getting the runbooks status. And used SignalR for implementing notification service.",
-      "Migrated react web apps from material Ui v4 to v5.",
-      "Configured CI and CD with pipeline to deploy components to Azure app services."
+      "Configured high availability system, and disaster recovery to reduce the system downtime.",
+      "Configured Application Gateway for load balancing, enabling Web Application Firewall(WAF).",
+      "Utilized Key Vault for securing app configuration and restricting human intervention accessibility by 100%.",
+      "Fixed bugs, reducing issue backlog by 10% and contributed in solving 20% of SonarQube identified vulnerabilities.",
+      "Established CI/CD pipeline with Azure DevOps there by reduced overall component deployment time by 25%.",
+      "Hosted docker images using azure app services.",
+      "Developed a platform to build the tenant infrastructures using Typescript, React and .Net"
     ],
     "id": 2
   },
   {
     "from": "Mar 2022",
     "to": "Jul 2022",
-    "icon": "https://media.licdn.com/dms/image/C510BAQEQDxxgkxOZEg/company-logo_200_200/0/1631439884043/vela_technologies_india_llp_logo?e=1724284800&v=beta&t=e-rbP9jOdMleTpxOQejsQEWC2TrFzH8N_95NZTbVaSw",
+    "icon": "https://d1hbpr09pwz0sk.cloudfront.net/logo_url/vela-technologies-india-9562d2ee",
     "company": "Vela Technologies India",
     "position": "Trainee Software Engineer (Intern)",
     "experience": [
-      "Worked on an integration project called File Share, backend developed using .NET Core Web API and fonted end is experimented among two technologies React Typescript and ASP.NET Core Blazor WebAssembly, along with that used cosmos Db for record storage and Azure blob storage. integrated with Azure B2C for enabling secured access over files and handled role based authorization for accessing blobs ",
-      "handled whole Porject"
+      "Implemented Rest APIs for dealing with azure blob storage using Microsoft SDK.",
+      "Implemented React SPA.",
+      "Integrated Azure B2C for enabling different identity providers while Sign In."
     ],
     "id": 1
   }

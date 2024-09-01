@@ -7,15 +7,6 @@
     "id": 1
   },
   {
-    "name": "Contacts",
-    "githubLink": "https://github.com/chethankumblekar/Contacts/tree",
-    "techstacks": "ExpressJS, Node, MongoDB",
-    "description": [
-      "its a backend application for contacts using express js, yet to design frontend"
-    ],
-    "id": 2
-  },
-  {
     "name": "Android Project",
     "githubLink": "https://github.com/chethankumblekar/Greenland-Tourism-App",
     "techstacks": "Java, Firebase Database,XML",
