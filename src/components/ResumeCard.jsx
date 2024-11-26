@@ -1,4 +1,4 @@
-import { Card } from '../styles/Resume.style'
+import { Card, DescCard } from '../styles/Resume.style'
 
 const ResumeCard = ({ content }) => {
   const {
@@ -21,7 +21,7 @@ const ResumeCard = ({ content }) => {
           <img src={icon} width="30px" height="30px" />
           <p className="company-name">{company ? company : organization}</p>
         </div>
-        <div className="description">
+        <DescCard>
           <ul>
             {experience
               ? experience?.map((item, i) => {
@@ -31,7 +31,7 @@ const ResumeCard = ({ content }) => {
                   return <li key={i}>{item}</li>
                 })}
           </ul>
-        </div>
+        </DescCard>
       </Card>
     </>
   )

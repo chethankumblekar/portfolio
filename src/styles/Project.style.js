@@ -22,7 +22,8 @@ export const Card = styled.div`
   background-color: #fff;
   margin: 20px 0;
   margin-bottom: 30px;
-  padding: 80px 40px;
+  padding: 20px 40px;
+  border-radius: 10px;
   box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 25px 0px;
 
   & .project-name {
@@ -34,7 +35,7 @@ export const Card = styled.div`
 
   & .tech-stacks {
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-top: 50px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -72,4 +73,17 @@ export const Card = styled.div`
       margin-top: 30px;
     }
   }
+`
+
+export const ImgCard = styled(Card)`
+  display: 'flex';
+  flex-direction: column;
+  aligncontent: 'center';
+  justifycontent: 'center';
+  text-align: 'center';
+`
+export const DescCard = styled(Card)`
+  background-color: rgb(238, 247, 255);
+  margin: 20px;
+  box-shadow: none;
 `

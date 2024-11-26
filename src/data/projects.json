@@ -1,6 +1,7 @@
 [
   {
     "name": "Chat Service",
+    "img": "https://cdn.vectorstock.com/i/1000x1000/36/97/approved-chat-app-icon-vector-28873697.webp",
     "githubLink": "https://github.com/chethankumblekar/ChatService",
     "techstacks": "c#,.NET Core, SignalR",
     "description": ["Chat service devloped using .net core and SignalR, yet to design frontend"],
@@ -8,6 +9,7 @@
   },
   {
     "name": "Android Project",
+    "img": "https://github.com/chethankumblekar/Greenland-Tourism-App/blob/master/app%20demo%20500.gif?raw=true",
     "githubLink": "https://github.com/chethankumblekar/Greenland-Tourism-App",
     "techstacks": "Java, Firebase Database,XML",
     "description": [

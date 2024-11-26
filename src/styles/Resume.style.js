@@ -61,11 +61,13 @@ export const Card = styled.div`
   background-color: #fff;
   margin: 20px 0;
   margin-bottom: 30px;
-  padding: 80px 40px;
+  padding: 20px 40px;
+  border-radius: 10px;
   box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 25px 0px;
 
   & .details {
     flex: 0 0 35%;
+    padding: 20px;
   }
 
   & .timeline {
@@ -104,4 +106,9 @@ export const Card = styled.div`
       margin-top: 20px;
     }
   }
+`
+
+export const DescCard = styled(Card)`
+  background-color: rgb(238, 247, 255);
+  margin: 20px;
 `

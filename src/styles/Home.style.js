@@ -36,6 +36,7 @@ export const AboutCardWrapper = styled.div`
   background-color: rgb(238, 247, 255);
   box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px 0px;
   display: flex;
+  border-radius: 5px;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
