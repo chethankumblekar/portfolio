@@ -88,9 +88,9 @@ export const DescWrapper = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: 80px;
+  font-size: 60px;
   @media ${devices.tablet} {
-    font-size: 50px;
+    font-size: 40px;
   }
 `
 
