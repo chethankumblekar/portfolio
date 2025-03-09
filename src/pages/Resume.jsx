@@ -13,6 +13,7 @@ const Experience = () => {
   useEffect(() => {
     setExperience(experiences)
   }, [experiences])
+
   return (
     <>
       <ResumeWrapper>

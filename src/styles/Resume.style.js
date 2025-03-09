@@ -57,6 +57,7 @@ export const ResumeContent = styled.div`
 `
 export const Card = styled.div`
   display: flex;
+  flex-direction: column; /* Change to column to stack details and description */
   justify-content: space-around;
   background-color: #fff;
   margin: 20px 0;

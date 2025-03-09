@@ -18,6 +18,7 @@ export const ProjectsContent = styled(ResumeContent)`
 `
 export const Card = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   background-color: #fff;
   margin: 20px 0;
