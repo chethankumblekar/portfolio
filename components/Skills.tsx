@@ -10,6 +10,7 @@ import {
   TestTube,
   Network,
   Settings,
+  Award,
 } from "lucide-react";
 
 /* ================= ANIMATION VARIANTS ================= */
@@ -44,7 +45,65 @@ const pillVariants = {
   },
 };
 
-/* ================= GROUPED SKILLS DATA ================= */
+/* ================= PLURALSIGHT BADGES ================= */
+
+const learningBadges = [
+  {
+    label: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305): Identity, Governance and Monitoring Solutions",
+    provider: "Pluralsight",
+    link: "https://app.pluralsight.com/achievements/share/b14d9f1d-7ffb-4664-9128-9250ffd8772f",
+    zones: ["Cloud & Platform Layer"],
+  },
+  {
+    label: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305): Networking, File and Blob Storage Solutions",
+    provider: "Pluralsight",
+    link: "https://app.pluralsight.com/achievements/share/cbeee633-c06f-4d5c-aa56-4f473c13602a",
+    zones: ["Cloud & Platform Layer"],
+  },
+];
+
+/* ================= BADGE COMPONENT ================= */
+
+function LearningBadges({ zone }: { zone: string }) {
+  const badges = learningBadges.filter((b) => b.zones.includes(zone));
+  if (!badges.length) return null;
+
+  return (
+    <div className="mt-10">
+      <p className="text-xs uppercase tracking-widest text-slate-500 mb-3">
+        Verified Learning
+      </p>
+
+      <div className="flex flex-wrap gap-3">
+        {badges.map((badge) => (
+          <a
+            key={badge.label}
+            href={badge.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex items-center gap-2
+              px-3 py-1.5
+              rounded-full
+              text-xs
+              bg-indigo-500/10
+              border border-indigo-500/20
+              text-indigo-300
+              hover:bg-indigo-500/20
+              transition
+            "
+          >
+            <Award className="w-4 h-4 text-indigo-400" />
+            <span className="font-medium">{badge.provider}</span>
+            <span className="opacity-80">— {badge.label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ================= SKILL ZONES ================= */
 
 const skillZones = [
   {
@@ -158,7 +217,7 @@ const skillZones = [
   },
 ];
 
-/* ================= COMPONENT ================= */
+/* ================= MAIN COMPONENT ================= */
 
 export default function Skills() {
   return (
@@ -199,8 +258,12 @@ export default function Skills() {
             >
               {/* ZONE HEADER */}
               <div className="mb-10">
-                <h3 className="text-3xl font-semibold mb-3">{zone.zone}</h3>
-                <p className="text-slate-400 max-w-3xl">{zone.description}</p>
+                <h3 className="text-3xl font-semibold mb-3">
+                  {zone.zone}
+                </h3>
+                <p className="text-slate-400 max-w-3xl">
+                  {zone.description}
+                </p>
               </div>
 
               {/* GROUPS */}
@@ -213,7 +276,9 @@ export default function Skills() {
                         <span className="w-9 h-9 flex items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400">
                           <Icon className="w-5 h-5" />
                         </span>
-                        <h4 className="text-xl font-semibold">{group.title}</h4>
+                        <h4 className="text-xl font-semibold">
+                          {group.title}
+                        </h4>
                       </div>
 
                       <div className="flex flex-wrap gap-3">
@@ -238,6 +303,9 @@ export default function Skills() {
                   );
                 })}
               </div>
+
+              {/* LEARNING BADGES */}
+              <LearningBadges zone={zone.zone} />
             </motion.div>
           ))}
         </div>
