@@ -5,32 +5,32 @@ import { Code2, Layout, Users, Cloud, GitBranch, Shield } from "lucide-react";
 
 const metricGroups = [
   {
-    title: "Software Engineering",
-    items: [
-      { value: "Full-Stack", label: "Web Applications", icon: Layout },
-      { value: ".NET Core", label: "Backend Systems", icon: Code2 },
-      { value: "REST APIs", label: "Auth & Data", icon: Shield },
-      { value: "Prod Code", label: "Ownership", icon: Code2 },
-    ],
-  },
+  title: "Software Engineering",
+  items: [
+    { value: "Full-Stack", label: "Production Systems", icon: Layout },
+    { value: ".NET Core", label: "Backend Services", icon: Code2 },
+    { value: "REST APIs", label: "Auth & Data", icon: Shield },
+    { value: "Prod Ownership", label: "End-to-End", icon: Code2 },
+  ],
+},
   {
-    title: "Product & Scale",
-    items: [
-      { value: "EDMS", label: "Enterprise Product", icon: Users },
-      { value: "60+", label: "Customers", icon: Users },
-      { value: "Multi-Tenant", label: "Architecture", icon: Cloud },
-      { value: "On-Call", label: "Production", icon: Shield },
-    ],
-  },
+  title: "Product & Scale",
+  items: [
+    { value: "EDMS", label: "Enterprise Platform", icon: Users },
+    { value: "60+", label: "Active Customers", icon: Users },
+    { value: "Multi-Tenant", label: "SaaS Architecture", icon: Cloud },
+    { value: "On-Call", label: "Production Support", icon: Shield },
+  ],
+},
   {
-    title: "Cloud & DevOps",
-    items: [
-      { value: "Azure", label: "PaaS Platforms", icon: Cloud },
-      { value: "IaC", label: "Bicep & ARM", icon: GitBranch },
-      { value: "CI/CD", label: "Automated Releases", icon: GitBranch },
-      { value: "Zero-Touch", label: "Provisioning", icon: Cloud },
-    ],
-  },
+  title: "Cloud & Platform Engineering",
+  items: [
+    { value: "Azure", label: "PaaS & Networking", icon: Cloud },
+    { value: "IaC", label: "Platform Automation", icon: GitBranch },
+    { value: "CI/CD", label: "Release Pipelines", icon: GitBranch },
+    { value: "Zero-Touch", label: "Provisioning", icon: Cloud },
+  ],
+}
 ];
 
 export default function Metrics() {

@@ -13,7 +13,7 @@ export default function RootLayout({
         <TopNav />
         <main>
           {children}
-          <AskAI section="Portfolio" />
+          {/* <AskAI section="Portfolio" /> */}
         </main>
       </body>
     </html>

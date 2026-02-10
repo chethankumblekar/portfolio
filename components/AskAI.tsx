@@ -172,6 +172,7 @@ export default function FloatingAIChat({ section }: { section: string }) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
                 placeholder="Ask something..."
+                disabled={true}
                 className="
                   flex-1 px-3 py-2 rounded-lg
                   bg-black/40 border border-white/10

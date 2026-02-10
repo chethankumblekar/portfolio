@@ -1,35 +1,51 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import { ExternalLink } from "lucide-react";
 
-const navItems = [
-  { path: "/", label: "Home" },
-  { path: "/case-studies", label: "Case Studies" },
-  { path: "/skills", label: "Skills" },
-  { path: "/experience", label: "Experience" },
-  { path: "/resume.pdf", label: "Resume", external: true },
+type NavItem = {
+  label: string;
+  path: string;
+  external?: boolean;
+};
+
+const RESUME_LINK =
+  "https://drive.google.com/file/d/1wCWzCbXy-x89WI6NlQwUhMg4DavrANrv/view?usp=sharing";
+
+const navItems: NavItem[] = [
+  { label: "Home", path: "/" },
+  { label: "Case Studies", path: "/case-studies" },
+  { label: "Skills", path: "/skills" },
+  { label: "Experience", path: "/experience" },
+  {
+    label: "Resume",
+    path: RESUME_LINK,
+    external: true,
+  },
 ];
 
 export default function TopNav() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const navigate = (path: string, external?: boolean) => {
-    if (external) {
-      window.open(path, "_blank");
+  const handleNavigation = (item: NavItem) => {
+    if (item.external) {
+      window.open(item.path, "_blank", "noopener,noreferrer");
       return;
     }
-    if (pathname === path) return;
-    router.push(path);
+
+    if (pathname === item.path) return;
+    router.push(item.path);
   };
 
   return (
     <nav
+      aria-label="Primary navigation"
       className="
         fixed top-6 right-6 z-50
-        backdrop-blur-sm
-        bg-transparent
-        border border-white/5
+        backdrop-blur-md
+        bg-white/[0.03]
+        border border-white/[0.08]
         rounded-full
       "
     >
@@ -43,10 +59,12 @@ export default function TopNav() {
           return (
             <button
               key={item.label}
-              onClick={() => navigate(item.path, item.external)}
+              onClick={() => handleNavigation(item)}
+              aria-current={isActive ? "page" : undefined}
               className={`
+                flex items-center gap-1.5
                 text-xs uppercase tracking-widest
-                transition-colors
+                transition-colors duration-200
                 ${
                   isActive
                     ? "text-indigo-400"
@@ -54,7 +72,11 @@ export default function TopNav() {
                 }
               `}
             >
-              {item.label}
+              <span>{item.label}</span>
+
+              {item.external && (
+                <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+              )}
             </button>
           );
         })}

@@ -7,31 +7,31 @@ const pillars = [
   {
     title: "Full-Stack Software Engineering",
     description:
-      "Building end-to-end software systems including frontend interfaces, backend services, APIs, and data layers for enterprise products and internal platforms.",
+      "Building end-to-end software systems, covering frontend interfaces, backend services, APIs, and data layers for enterprise and customer-facing applications.",
     icon: Layout,
   },
   {
     title: "Backend & Platform Services",
     description:
-      "Developing .NET Core services, REST APIs, authentication flows, and automation systems that power onboarding, integrations, and product workflows.",
+      "Designing and developing .NET Core services, REST APIs, authentication flows, and automation systems that power product workflows, integrations, and platform operations.",
     icon: Code2,
   },
   {
     title: "Cloud Platform Architecture",
     description:
-      "Designing and operating scalable Azure platforms for multi-tenant products, customer environments, and production workloads.",
+      "Architecting and operating scalable Azure platforms for multi-tenant SaaS products, customer environments, and production workloads with high availability and resilience.",
     icon: Cloud,
   },
   {
     title: "DevOps & Infrastructure Automation",
     description:
-      "Automating infrastructure and delivery pipelines using IaC, CI/CD, and scripting to enable fast, reliable releases.",
+      "Automating infrastructure provisioning and delivery pipelines using IaC and CI/CD to enable fast, repeatable, and reliable releases across environments.",
     icon: GitBranch,
   },
   {
     title: "Security & Production Engineering",
     description:
-      "Owning security, monitoring, and reliability through CIAM, Key Vault, alerts, on-call support, and performance tuning.",
+      "Owning production security, monitoring, and reliability through identity systems, secrets management, observability, alerting, and on-call support.",
     icon: ShieldCheck,
   },
 ];
@@ -47,11 +47,10 @@ export default function Pillars() {
           className="mb-24 max-w-3xl"
         >
           <h2 className="text-5xl md:text-6xl font-semibold mb-6">
-            What I <span className="text-indigo-400">Build</span>
+            How I <span className="text-indigo-400">Engineer</span>
           </h2>
           <p className="text-lg text-slate-400">
-            Core engineering capabilities shaped by building real products,
-            platforms, and production systems.
+            Core engineering strengths shaped by building and operating real-world production systems at scale.
           </p>
         </motion.div>
 

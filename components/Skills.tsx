@@ -45,17 +45,19 @@ const pillVariants = {
   },
 };
 
-/* ================= PLURALSIGHT BADGES ================= */
+/* ================= VERIFIED LEARNING ================= */
 
 const learningBadges = [
   {
-    label: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305): Identity, Governance and Monitoring Solutions",
+    label:
+      "Azure Solutions Architect Expert (AZ-305): Identity, Governance & Monitoring",
     provider: "Pluralsight",
     link: "https://app.pluralsight.com/achievements/share/b14d9f1d-7ffb-4664-9128-9250ffd8772f",
     zones: ["Cloud & Platform Layer"],
   },
   {
-    label: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305): Networking, File and Blob Storage Solutions",
+    label:
+      "Azure Solutions Architect Expert (AZ-305): Networking, Storage & Compute",
     provider: "Pluralsight",
     link: "https://app.pluralsight.com/achievements/share/cbeee633-c06f-4d5c-aa56-4f473c13602a",
     zones: ["Cloud & Platform Layer"],
@@ -69,8 +71,8 @@ function LearningBadges({ zone }: { zone: string }) {
   if (!badges.length) return null;
 
   return (
-    <div className="mt-10">
-      <p className="text-xs uppercase tracking-widest text-slate-500 mb-3">
+    <div className="mt-12">
+      <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">
         Verified Learning
       </p>
 
@@ -109,7 +111,7 @@ const skillZones = [
   {
     zone: "Application Layer",
     description:
-      "Building user-facing applications and backend services that form the core of enterprise products.",
+      "Designing and building user-facing applications and backend services that form the functional core of enterprise products.",
     groups: [
       {
         title: "Full-Stack Engineering",
@@ -122,14 +124,14 @@ const skillZones = [
         ],
       },
       {
-        title: "Backend Development",
+        title: "Backend & API Development",
         icon: Server,
         items: [
-          ".NET, .NET Core, ASP.NET Web API",
-          "REST API Design",
+          ".NET & ASP.NET Core (Web API)",
+          "RESTful API Design",
           "EF Core, LINQ",
           "CQRS, SOLID, Design Patterns",
-          "Async / Await, Dependency Injection",
+          "Async/Await, Dependency Injection",
         ],
       },
     ],
@@ -137,13 +139,14 @@ const skillZones = [
   {
     zone: "Cloud & Platform Layer",
     description:
-      "Designing and operating scalable, multi-tenant cloud platforms on Azure.",
+      "Architecting and operating scalable, multi-tenant cloud platforms on Microsoft Azure.",
     groups: [
       {
         title: "Cloud Engineering (Azure)",
         icon: Cloud,
         items: [
-          "Azure App Services & Functions",
+          "Azure App Services, Functions & AKS",
+          "Container Networking & Ingress",
           "Azure SQL, Storage, Cosmos DB",
           "Service Bus, AI Search",
           "Application Gateway, Load Balancer",
@@ -151,14 +154,14 @@ const skillZones = [
         ],
       },
       {
-        title: "DevOps & Automation",
+        title: "DevOps & Platform Automation",
         icon: GitBranch,
         items: [
-          "Azure DevOps CI/CD",
-          "GitHub Actions",
-          "Docker & Containers",
-          "Bicep, ARM, PowerShell",
-          "Zero-Touch Provisioning",
+          "Azure DevOps CI/CD, GitHub Actions",
+          "Docker (Image Build & Runtime)",
+          "Infrastructure as Code: Bicep, ARM, Terraform",
+          "Kubernetes (Deployment & Operations)",
+          "Zero-Touch Provisioning & Automation",
         ],
       },
     ],
@@ -166,16 +169,16 @@ const skillZones = [
   {
     zone: "Security & Reliability Layer",
     description:
-      "Ensuring systems are secure, observable, and reliable in production.",
+      "Ensuring production systems are secure, observable, and resilient under real-world workloads.",
     groups: [
       {
         title: "Security & Identity",
         icon: ShieldCheck,
         items: [
           "JWT, OAuth 2.0, OpenID, SAML",
-          "SSL / TLS, OWASP",
+          "SSL/TLS, OWASP Practices",
           "Azure Key Vault",
-          "Access Control & Secrets",
+          "Secrets & Access Control",
         ],
       },
       {
@@ -195,7 +198,7 @@ const skillZones = [
   {
     zone: "Integration & Engineering Practices",
     description:
-      "Connecting systems and maintaining quality, documentation, and delivery standards.",
+      "Integrating systems while maintaining quality, documentation, and delivery standards across teams.",
     groups: [
       {
         title: "APIs & Integrations",
@@ -208,9 +211,9 @@ const skillZones = [
         items: [
           "SSMS, SSRS",
           "Redis, MySQL",
-          "EDMS Domain Knowledge",
+          "EDMS Domain Expertise",
           "DocFX Documentation",
-          "Scrum / Agile",
+          "Scrum / Agile Delivery",
         ],
       },
     ],
@@ -257,7 +260,7 @@ export default function Skills() {
               "
             >
               {/* ZONE HEADER */}
-              <div className="mb-10">
+              <div className="mb-12">
                 <h3 className="text-3xl font-semibold mb-3">
                   {zone.zone}
                 </h3>
