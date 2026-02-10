@@ -10,6 +10,7 @@ import {
   TestTube,
   Network,
   Settings,
+  Award,
 } from "lucide-react";
 
 /* ================= ANIMATION VARIANTS ================= */
@@ -44,13 +45,73 @@ const pillVariants = {
   },
 };
 
-/* ================= GROUPED SKILLS DATA ================= */
+/* ================= VERIFIED LEARNING ================= */
+
+const learningBadges = [
+  {
+    label:
+      "Azure Solutions Architect Expert (AZ-305): Identity, Governance & Monitoring",
+    provider: "Pluralsight",
+    link: "https://app.pluralsight.com/achievements/share/b14d9f1d-7ffb-4664-9128-9250ffd8772f",
+    zones: ["Cloud & Platform Layer"],
+  },
+  {
+    label:
+      "Azure Solutions Architect Expert (AZ-305): Networking, Storage & Compute",
+    provider: "Pluralsight",
+    link: "https://app.pluralsight.com/achievements/share/cbeee633-c06f-4d5c-aa56-4f473c13602a",
+    zones: ["Cloud & Platform Layer"],
+  },
+];
+
+/* ================= BADGE COMPONENT ================= */
+
+function LearningBadges({ zone }: { zone: string }) {
+  const badges = learningBadges.filter((b) => b.zones.includes(zone));
+  if (!badges.length) return null;
+
+  return (
+    <div className="mt-12">
+      <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">
+        Verified Learning
+      </p>
+
+      <div className="flex flex-wrap gap-3">
+        {badges.map((badge) => (
+          <a
+            key={badge.label}
+            href={badge.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex items-center gap-2
+              px-3 py-1.5
+              rounded-full
+              text-xs
+              bg-indigo-500/10
+              border border-indigo-500/20
+              text-indigo-300
+              hover:bg-indigo-500/20
+              transition
+            "
+          >
+            <Award className="w-4 h-4 text-indigo-400" />
+            <span className="font-medium">{badge.provider}</span>
+            <span className="opacity-80">— {badge.label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ================= SKILL ZONES ================= */
 
 const skillZones = [
   {
     zone: "Application Layer",
     description:
-      "Building user-facing applications and backend services that form the core of enterprise products.",
+      "Designing and building user-facing applications and backend services that form the functional core of enterprise products.",
     groups: [
       {
         title: "Full-Stack Engineering",
@@ -63,14 +124,14 @@ const skillZones = [
         ],
       },
       {
-        title: "Backend Development",
+        title: "Backend & API Development",
         icon: Server,
         items: [
-          ".NET, .NET Core, ASP.NET Web API",
-          "REST API Design",
+          ".NET & ASP.NET Core (Web API)",
+          "RESTful API Design",
           "EF Core, LINQ",
           "CQRS, SOLID, Design Patterns",
-          "Async / Await, Dependency Injection",
+          "Async/Await, Dependency Injection",
         ],
       },
     ],
@@ -78,13 +139,14 @@ const skillZones = [
   {
     zone: "Cloud & Platform Layer",
     description:
-      "Designing and operating scalable, multi-tenant cloud platforms on Azure.",
+      "Architecting and operating scalable, multi-tenant cloud platforms on Microsoft Azure.",
     groups: [
       {
         title: "Cloud Engineering (Azure)",
         icon: Cloud,
         items: [
-          "Azure App Services & Functions",
+          "Azure App Services, Functions & AKS",
+          "Container Networking & Ingress",
           "Azure SQL, Storage, Cosmos DB",
           "Service Bus, AI Search",
           "Application Gateway, Load Balancer",
@@ -92,14 +154,14 @@ const skillZones = [
         ],
       },
       {
-        title: "DevOps & Automation",
+        title: "DevOps & Platform Automation",
         icon: GitBranch,
         items: [
-          "Azure DevOps CI/CD",
-          "GitHub Actions",
-          "Docker & Containers",
-          "Bicep, ARM, PowerShell",
-          "Zero-Touch Provisioning",
+          "Azure DevOps CI/CD, GitHub Actions",
+          "Docker (Image Build & Runtime)",
+          "Infrastructure as Code: Bicep, ARM, Terraform",
+          "Kubernetes (Deployment & Operations)",
+          "Zero-Touch Provisioning & Automation",
         ],
       },
     ],
@@ -107,16 +169,16 @@ const skillZones = [
   {
     zone: "Security & Reliability Layer",
     description:
-      "Ensuring systems are secure, observable, and reliable in production.",
+      "Ensuring production systems are secure, observable, and resilient under real-world workloads.",
     groups: [
       {
         title: "Security & Identity",
         icon: ShieldCheck,
         items: [
           "JWT, OAuth 2.0, OpenID, SAML",
-          "SSL / TLS, OWASP",
+          "SSL/TLS, OWASP Practices",
           "Azure Key Vault",
-          "Access Control & Secrets",
+          "Secrets & Access Control",
         ],
       },
       {
@@ -136,7 +198,7 @@ const skillZones = [
   {
     zone: "Integration & Engineering Practices",
     description:
-      "Connecting systems and maintaining quality, documentation, and delivery standards.",
+      "Integrating systems while maintaining quality, documentation, and delivery standards across teams.",
     groups: [
       {
         title: "APIs & Integrations",
@@ -149,16 +211,16 @@ const skillZones = [
         items: [
           "SSMS, SSRS",
           "Redis, MySQL",
-          "EDMS Domain Knowledge",
+          "EDMS Domain Expertise",
           "DocFX Documentation",
-          "Scrum / Agile",
+          "Scrum / Agile Delivery",
         ],
       },
     ],
   },
 ];
 
-/* ================= COMPONENT ================= */
+/* ================= MAIN COMPONENT ================= */
 
 export default function Skills() {
   return (
@@ -198,9 +260,13 @@ export default function Skills() {
               "
             >
               {/* ZONE HEADER */}
-              <div className="mb-10">
-                <h3 className="text-3xl font-semibold mb-3">{zone.zone}</h3>
-                <p className="text-slate-400 max-w-3xl">{zone.description}</p>
+              <div className="mb-12">
+                <h3 className="text-3xl font-semibold mb-3">
+                  {zone.zone}
+                </h3>
+                <p className="text-slate-400 max-w-3xl">
+                  {zone.description}
+                </p>
               </div>
 
               {/* GROUPS */}
@@ -213,7 +279,9 @@ export default function Skills() {
                         <span className="w-9 h-9 flex items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400">
                           <Icon className="w-5 h-5" />
                         </span>
-                        <h4 className="text-xl font-semibold">{group.title}</h4>
+                        <h4 className="text-xl font-semibold">
+                          {group.title}
+                        </h4>
                       </div>
 
                       <div className="flex flex-wrap gap-3">
@@ -238,6 +306,9 @@ export default function Skills() {
                   );
                 })}
               </div>
+
+              {/* LEARNING BADGES */}
+              <LearningBadges zone={zone.zone} />
             </motion.div>
           ))}
         </div>

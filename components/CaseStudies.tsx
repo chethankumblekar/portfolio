@@ -30,6 +30,8 @@ const techIcons: Record<string, any> = {
   "Azure Key Vault": ShieldCheck,
   "CI/CD": GitBranch,
   "Bicep / ARM": GitBranch,
+  Terraform: GitBranch,
+  Docker: Cloud,
   React: Layout,
   TypeScript: Code2,
   "Tailwind CSS": Layout,
@@ -79,7 +81,7 @@ function ProjectLinks({
   if (!github && !preview) {
     return (
       <span className="inline-block mt-6 text-xs uppercase tracking-widest text-slate-500">
-        🔒 Internal / Confidential System
+        🔒 Enterprise / Confidential System
       </span>
     );
   }
@@ -127,7 +129,7 @@ function Diagram({ title, reverse }: { title: string; reverse?: boolean }) {
       <div className="h-full min-h-[320px] w-full rounded-2xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-slate-500 text-sm uppercase tracking-widest text-center px-6">
         {title}
         <br />
-        (Diagram Placeholder)
+        (Architecture Diagram)
       </div>
     </motion.div>
   );
@@ -198,25 +200,25 @@ export default function CaseStudies() {
             Case Studies
           </h2>
           <p className="text-lg text-slate-400">
-            A mix of enterprise systems and personal projects demonstrating
-            full-stack software engineering, cloud architecture, DevOps
-            automation, and real-world production ownership.
+            A selection of enterprise systems and personal projects demonstrating
+            full-stack engineering, cloud architecture, DevOps automation, and
+            real-world production ownership.
           </p>
         </motion.div>
 
-        {/* ===== WORK PROJECTS ===== */}
+        {/* ===== ENTERPRISE SYSTEMS ===== */}
         <h3 className="text-xs uppercase tracking-widest text-slate-500 mb-12">
-          Work Projects · Confidential
+          Enterprise Systems · Confidential
         </h3>
 
         <Section
-          label="Enterprise System"
+          label="Enterprise Platform"
           title="EDMS Product Platform"
           points={[
-            "Built backend services and APIs for enterprise document management",
-            "Implemented CIAM, OAuth, JWT, and external identity integration",
-            "Owned production monitoring, alerts, and on-call support",
-            "Supported 60+ customer environments",
+            "Designed and developed backend services and APIs for an enterprise document management platform",
+            "Implemented secure identity and access flows using CIAM, OAuth 2.0, JWT, and external identity providers",
+            "Owned production monitoring, alerting, and incident response for critical customer-facing workflows",
+            "Operated and supported 60+ customer environments within a multi-tenant SaaS architecture",
           ]}
           tech={[
             "C# / .NET",
@@ -226,18 +228,19 @@ export default function CaseStudies() {
             "Azure SQL",
             "Azure Storage",
             "Azure Key Vault",
+            "CI/CD",
           ]}
           diagram="EDMS Platform Architecture"
         />
 
         <Section
-          label="Enterprise System"
+          label="Enterprise Platform"
           title="Client Share Portal"
           points={[
-            "Secure portal for delivering product packages and files",
-            "Access control based on product, customer, and recipient",
-            "CIAM, Google, and external Entra authentication",
-            "Backend APIs for authorization and file metadata",
+            "Designed a secure customer-facing portal for controlled delivery of product packages and documents",
+            "Implemented fine-grained access control based on customer, product, and recipient context",
+            "Integrated CIAM, Google OAuth, and external Microsoft Entra authentication providers",
+            "Built backend authorization and metadata services to securely manage file access and lifecycle",
           ]}
           tech={[
             "C# / .NET",
@@ -264,11 +267,18 @@ export default function CaseStudies() {
           label="Personal Project"
           title="Multi-Cloud AI Infrastructure Advisor"
           points={[
-            "Analyzed cloud posture across AWS, Azure, and GCP",
-            "AI-based scoring and remediation recommendations",
-            "Designed extensible backend for future SaaS use",
+            "Designed a system to analyze cloud posture across AWS, Azure, and GCP environments",
+            "Applied AI-based scoring to identify risks and generate prioritized remediation recommendations",
+            "Architected the backend with extensibility in mind for future SaaS or platform use cases",
           ]}
-          tech={["C# / .NET", "REST APIs", "AI / ML", "Multi-Cloud", "Azure"]}
+          tech={[
+            "C# / .NET",
+            "REST APIs",
+            "AI / ML",
+            "Multi-Cloud",
+            "Azure",
+            "Terraform",
+          ]}
           diagram="AI Analysis Pipeline"
           github="https://github.com/chethankumblekar/Multi-Cloud-AI-Cloud-Advisor-AWS-Azure-GCP-"
         />
@@ -277,12 +287,18 @@ export default function CaseStudies() {
           label="Personal Project"
           title="Movie Rating Application (Frontend)"
           points={[
-            "Frontend-only SPA built with React",
-            "Consumed open-source movie APIs",
-            "Redux & Thunk for state management",
-            "Focused on UX and responsiveness",
+            "Developed a frontend-only single-page application using React and TypeScript",
+            "Integrated public movie APIs to fetch and display dynamic content",
+            "Implemented Redux and Thunk for predictable client-side state management",
+            "Focused on user experience, responsiveness, and clean component design",
           ]}
-          tech={["React", "TypeScript", "Tailwind CSS", "Redux", "Redux Thunk"]}
+          tech={[
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Redux",
+            "Redux Thunk",
+          ]}
           diagram="Frontend → Public APIs"
           github="https://github.com/chethankumblekar/movie-rating-app"
           reverse
@@ -292,11 +308,11 @@ export default function CaseStudies() {
           label="Personal Project"
           title="Real-Time Chat Application"
           points={[
-            "SignalR-based real-time messaging",
-            "Google authentication and authorization",
-            "User sessions and message routing",
+            "Built a real-time messaging system using SignalR for low-latency communication",
+            "Implemented Google-based authentication and authorization flows",
+            "Designed user session handling and message routing for concurrent clients",
           ]}
-          tech={["C# / .NET", "SignalR", "Google Auth"]}
+          tech={["C# / .NET", "SignalR", "Google Auth", "Docker"]}
           diagram="Client → SignalR Hub → Clients"
           github="https://github.com/chethankumblekar/ChatApp"
         />
