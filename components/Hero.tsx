@@ -28,7 +28,7 @@ export default function Hero() {
       {/* background overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
 
-      <div className="relative w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
+      <div className="relative w-full max-w-[110rem] mx-auto px-6 md:px-12 lg:px-16">
         <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
           {/* LEFT — TEXT */}
           <motion.div
