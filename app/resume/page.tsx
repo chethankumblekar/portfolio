@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
+import { experience } from "@/data/experience";
+import { skillHighlights } from "@/data/skills";
+import Credentials from "@/components/Credentials";
+import StatusDot from "@/components/StatusDot";
+import { RESUME_PDF } from "@/lib/constants";
 
 export default function ResumePage() {
   return (
     <section className="relative min-h-screen pt-40 pb-32">
-      {/* background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
-
       <div className="relative max-w-[1100px] mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div
@@ -17,75 +19,90 @@ export default function ResumePage() {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h1 className="text-[clamp(3rem,6vw,4.5rem)] font-semibold mb-6">
+          <StatusDot label="Currently on-call · Ascertra" tone="green" className="mb-6" />
+
+          <h1 className="text-[clamp(3rem,6vw,4.5rem)] font-semibold mb-6 text-glow-cyan">
             Resume
           </h1>
 
           <p className="text-xl text-slate-400 max-w-3xl leading-relaxed mb-10">
-            Full-stack software engineer with experience building scalable
-            backend systems, modern frontends, and cloud-native infrastructure
-            on Azure.
+            DevOps & Cloud Engineer with 4+ years designing, building, and
+            operating cloud-native infrastructure on Microsoft Azure, owning
+            CI/CD, AKS cluster management, and Infrastructure as Code across a
+            60+ tenant platform sustaining 99.7% uptime.
           </p>
 
           <a
-            href="/resume.pdf"
-            target="_blank"
+            href={RESUME_PDF}
+            download
             className="
               inline-flex items-center gap-3
               px-6 py-3 rounded-full
-              backdrop-blur-md bg-white/5 border border-white/10
-              text-sm uppercase tracking-widest
-              text-slate-300 hover:text-white hover:bg-white/10
+              panel
+              font-mono-eyebrow text-sm uppercase
+              text-slate-300 hover:text-white hover:border-signal-cyan/40
             "
           >
-            <HiDownload className="w-4 h-4 text-indigo-400" />
-            Download PDF
+            <HiDownload className="w-4 h-4 text-signal-cyan" />
+            Download Resume (PDF)
           </a>
         </motion.div>
 
-        {/* Experience */}
-        <Section title="Experience">
-          <ResumeItem
-            title="Software Engineer"
-            subtitle="Cloud & Full-Stack · 2.5+ Years"
+        {/* Embedded PDF */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="panel rounded-2xl overflow-hidden mb-24"
+        >
+          <object
+            data={RESUME_PDF}
+            type="application/pdf"
+            className="w-full h-[85vh] min-h-[600px]"
           >
-            <ul className="list-disc pl-5 space-y-3">
-              <li>
-                Built and maintained full-stack applications using
-                <span className="text-indigo-400"> .NET, React, SQL Server</span>
-                .
-              </li>
-              <li>
-                Designed Azure infrastructure using App Services, Storage,
-                Application Gateway, and WAF.
-              </li>
-              <li>
-                Implemented CI/CD pipelines, monitoring, and automation to
-                support production workloads.
-              </li>
-            </ul>
-          </ResumeItem>
+            <div className="flex flex-col items-center justify-center h-[50vh] min-h-[400px] gap-4 text-center px-6">
+              <p className="text-slate-400">
+                Your browser can&apos;t preview PDFs inline.
+              </p>
+              <a
+                href={RESUME_PDF}
+                download
+                className="inline-flex items-center gap-3 px-6 py-3 rounded-full panel font-mono-eyebrow text-sm uppercase text-slate-300 hover:text-white hover:border-signal-cyan/40"
+              >
+                <HiDownload className="w-4 h-4 text-signal-cyan" />
+                Download Resume (PDF)
+              </a>
+            </div>
+          </object>
+        </motion.div>
+
+        {/* Highlights */}
+        <Section title="Experience">
+          {experience.map((item) => (
+            <ResumeItem
+              key={item.id}
+              title={`${item.role} (${item.company})`}
+              subtitle={`${item.period} · ${item.location}`}
+            >
+              <ul className="list-disc pl-5 space-y-2">
+                {item.impact.slice(0, 4).map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </ResumeItem>
+          ))}
         </Section>
 
         {/* Skills */}
         <Section title="Core Skills">
           <div className="flex flex-wrap gap-3">
-            {[
-              "C# / .NET",
-              "ASP.NET Core",
-              "React / Next.js",
-              "TypeScript",
-              "Azure",
-              "SQL Server",
-              "CI/CD",
-              "System Design",
-            ].map((skill) => (
+            {skillHighlights.map((skill) => (
               <span
                 key={skill}
                 className="
                   px-4 py-2 rounded-full
                   text-sm
-                  bg-white/5 border border-white/10
+                  panel
                   text-slate-300
                 "
               >
@@ -95,17 +112,9 @@ export default function ResumePage() {
           </div>
         </Section>
 
-        {/* Education */}
-        <Section title="Education">
-          <ResumeItem
-            title="Bachelor’s Degree"
-            subtitle="Computer Science / Engineering"
-          >
-            <p className="text-slate-400">
-              Strong foundation in programming, data structures, databases, and
-              software engineering principles.
-            </p>
-          </ResumeItem>
+        {/* Education + Certifications */}
+        <Section title="Education & Certifications">
+          <Credentials />
         </Section>
       </div>
     </section>
@@ -123,7 +132,7 @@ function Section({
 }) {
   return (
     <div className="mb-24">
-      <h2 className="text-2xl font-semibold mb-10 text-indigo-400">
+      <h2 className="text-2xl font-semibold mb-10 text-signal-cyan">
         {title}
       </h2>
       {children}
@@ -143,7 +152,7 @@ function ResumeItem({
   return (
     <div className="mb-12">
       <h3 className="text-xl font-semibold mb-1">{title}</h3>
-      <p className="text-sm uppercase tracking-widest text-slate-500 mb-4">
+      <p className="font-mono-eyebrow text-xs uppercase text-slate-500 mb-4">
         {subtitle}
       </p>
       <div className="text-slate-400 leading-relaxed">{children}</div>

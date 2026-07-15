@@ -1,26 +1,25 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { ExternalLink } from "lucide-react";
+import { Download } from "lucide-react";
+import { RESUME_PDF } from "@/lib/constants";
 
 type NavItem = {
   label: string;
   path: string;
-  external?: boolean;
+  download?: boolean;
 };
-
-const RESUME_LINK =
-  "https://drive.google.com/file/d/1wCWzCbXy-x89WI6NlQwUhMg4DavrANrv/view?usp=sharing";
 
 const navItems: NavItem[] = [
   { label: "Home", path: "/" },
   { label: "Case Studies", path: "/case-studies" },
   { label: "Skills", path: "/skills" },
   { label: "Experience", path: "/experience" },
+  { label: "Resume", path: "/resume" },
   {
-    label: "Resume",
-    path: RESUME_LINK,
-    external: true,
+    label: "PDF",
+    path: RESUME_PDF,
+    download: true,
   },
 ];
 
@@ -29,11 +28,6 @@ export default function TopNav() {
   const pathname = usePathname();
 
   const handleNavigation = (item: NavItem) => {
-    if (item.external) {
-      window.open(item.path, "_blank", "noopener,noreferrer");
-      return;
-    }
-
     if (pathname === item.path) return;
     router.push(item.path);
   };
@@ -41,42 +35,48 @@ export default function TopNav() {
   return (
     <nav
       aria-label="Primary navigation"
-      className="
-        fixed top-6 right-6 z-50
-        backdrop-blur-md
-        bg-white/[0.03]
-        border border-white/[0.08]
-        rounded-full
-      "
+      className="fixed top-6 right-6 z-50 w-fit"
     >
-      <div className="flex items-center gap-6 px-6 py-3">
+      <div className="panel rounded-full flex items-center gap-6 px-6 py-3">
         {navItems.map((item) => {
           const isActive =
-            !item.external &&
+            !item.download &&
             (pathname === item.path ||
               (item.path !== "/" && pathname.startsWith(item.path)));
+
+          const linkClassName = `
+            flex items-center gap-1.5
+            font-mono-eyebrow text-xs uppercase
+            transition-colors duration-200
+            ${
+              isActive
+                ? "text-signal-cyan"
+                : "text-slate-300 hover:text-signal-cyan"
+            }
+          `;
+
+          if (item.download) {
+            return (
+              <a
+                key={item.label}
+                href={item.path}
+                download
+                className={linkClassName}
+              >
+                <span>{item.label}</span>
+                <Download className="w-3.5 h-3.5 opacity-70" />
+              </a>
+            );
+          }
 
           return (
             <button
               key={item.label}
               onClick={() => handleNavigation(item)}
               aria-current={isActive ? "page" : undefined}
-              className={`
-                flex items-center gap-1.5
-                text-xs uppercase tracking-widest
-                transition-colors duration-200
-                ${
-                  isActive
-                    ? "text-indigo-400"
-                    : "text-slate-300 hover:text-indigo-400"
-                }
-              `}
+              className={linkClassName}
             >
               <span>{item.label}</span>
-
-              {item.external && (
-                <ExternalLink className="w-3.5 h-3.5 opacity-70" />
-              )}
             </button>
           );
         })}

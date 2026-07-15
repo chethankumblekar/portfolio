@@ -1,51 +1,49 @@
+import { experience } from "@/data/experience";
+import { projects } from "@/data/projects";
+
+const profile = `
+Chethan K is a DevOps & Cloud/Platform Engineer based in Bengaluru, India.
+He designs, builds, and operates production-grade cloud infrastructure on
+Microsoft Azure, owning AKS, CI/CD, security, and observability end-to-end
+for a multi-tenant SaaS platform running 24x7 in production.
+
+Headline metrics: 99.7% platform uptime, 60+ tenant platform, 20+ CI/CD
+pipelines owned, ~90% less manual provisioning via Infrastructure as Code.
+`.trim();
+
+const experienceSummary = experience
+  .map(
+    (e) => `
+${e.role} at ${e.company} (${e.period}, ${e.location})${e.current ? " [current role]" : ""}
+${e.summary}
+Key impact:
+${e.impact.map((i) => `- ${i}`).join("\n")}
+`.trim()
+  )
+  .join("\n\n");
+
+const projectsSummary = projects
+  .map(
+    (p) => `
+${p.title} (${p.category})
+${p.description}
+Tech: ${p.tech.join(", ")}
+`.trim()
+  )
+  .join("\n\n");
+
+const education = `
+B.E., Information Science and Engineering, MVJ College of Engineering,
+Bengaluru (VTU), CGPA 8.5/10.
+
+Certifications: Microsoft Certified Azure Administrator Associate (AZ-104,
+in progress), Azure Solutions Architect Expert (AZ-305) x2 via Pluralsight,
+IBM Data Science Specialization (Coursera).
+`.trim();
+
 export const aiKnowledge = {
-  profile: `
-Chethan is a Full-Stack Software Developer and Cloud / DevOps Engineer.
-He builds production-grade systems end-to-end including frontend,
-backend, cloud infrastructure, security, CI/CD, and operations.
-`,
-
-  experience: `
-Career progression:
-- Trainee Engineer → Associate Software Engineer → Software Engineer
-- Became DevOps Engineer in Jan 2025 while continuing full-stack work
-- Owned production platforms, cloud automation, and on-call support
-`,
-
-  skills: `
-Frontend: React, TypeScript, Redux, Tailwind, Blazor
-Backend: .NET Core, ASP.NET Web API, EF Core, SignalR
-Cloud: Azure App Services, Azure SQL, Storage, AI Search, CIAM
-DevOps: CI/CD, Bicep, ARM, PowerShell, Docker
-Security: OAuth2, JWT, OpenID, Key Vault
-Observability: App Insights, Azure Monitor, Prometheus, Uptime Kuma
-`,
-
-  products: `
-Enterprise EDMS Product:
-- 60+ enterprise customers
-- Multi-tenant Azure architecture
-- CIAM, RBAC, secure document workflows
-- High availability with monitoring and alerts
-
-Client Share Portal:
-- Secure package/file delivery system
-- Azure Storage + .NET APIs
-- Product-level isolation and access control
-`,
-
-  projects: `
-Personal Projects:
-- Movie Rating App (React, TypeScript, Redux)
-- Real-time Chat App (SignalR, Auth, React)
-- Multi-Cloud AI Advisor (AWS, Azure, GCP)
-`,
-
-  devops: `
-DevOps & Reliability:
-- 20+ CI/CD pipelines configured
-- Zero-touch environment provisioning
-- On-call rotations and incident handling
-- Performance tuning and production debugging
-`,
+  profile,
+  experience: experienceSummary,
+  projects: projectsSummary,
+  education,
 };

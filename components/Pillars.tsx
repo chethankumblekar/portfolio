@@ -1,38 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Layout, Cloud, GitBranch, ShieldCheck } from "lucide-react";
+import { Cloud, GitBranch, ShieldCheck, Gauge, Code2 } from "lucide-react";
 
 const pillars = [
   {
-    title: "Full-Stack Software Engineering",
-    description:
-      "Building end-to-end software systems, covering frontend interfaces, backend services, APIs, and data layers for enterprise and customer-facing applications.",
-    icon: Layout,
-  },
-  {
-    title: "Backend & Platform Services",
-    description:
-      "Designing and developing .NET Core services, REST APIs, authentication flows, and automation systems that power product workflows, integrations, and platform operations.",
-    icon: Code2,
-  },
-  {
     title: "Cloud Platform Architecture",
     description:
-      "Architecting and operating scalable Azure platforms for multi-tenant SaaS products, customer environments, and production workloads with high availability and resilience.",
+      "Architecting and operating scalable Azure platforms — AKS, App Services, Front Door, and networking — for multi-tenant SaaS products serving 60+ customer environments with high availability and resilience.",
     icon: Cloud,
   },
   {
     title: "DevOps & Infrastructure Automation",
     description:
-      "Automating infrastructure provisioning and delivery pipelines using IaC and CI/CD to enable fast, repeatable, and reliable releases across environments.",
+      "Owning 20+ CI/CD pipelines in Azure DevOps and automating infrastructure with Terraform, Bicep, and PowerShell — cutting manual provisioning effort by ~90% and enabling zero-downtime releases.",
     icon: GitBranch,
   },
   {
-    title: "Security & Production Engineering",
+    title: "Observability & Reliability Engineering",
     description:
-      "Owning production security, monitoring, and reliability through identity systems, secrets management, observability, alerting, and on-call support.",
+      "Running production systems at 99.7% uptime under 24x7 on-call — full-stack observability with Prometheus, Grafana, and Azure Monitor, plus incident management, RCA, and capacity planning.",
+    icon: Gauge,
+  },
+  {
+    title: "Security & Identity Engineering",
+    description:
+      "Owning production security through Microsoft Entra ID, Conditional Access, RBAC, Key Vault, and SAST — enforcing auditable, policy-governed access for external clients and internal teams alike.",
     icon: ShieldCheck,
+  },
+  {
+    title: "Full-Stack Software Engineering",
+    description:
+      "Designing and shipping the systems that run on top of the platform — .NET Core APIs, React frontends, and CQRS-based services — end-to-end, from architecture to production support.",
+    icon: Code2,
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Pillars() {
           className="mb-24 max-w-3xl"
         >
           <h2 className="text-5xl md:text-6xl font-semibold mb-6">
-            How I <span className="text-indigo-400">Engineer</span>
+            How I <span className="text-signal-cyan">Engineer</span>
           </h2>
           <p className="text-lg text-slate-400">
             Core engineering strengths shaped by building and operating real-world production systems at scale.
@@ -64,14 +64,10 @@ export default function Pillars() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="
-                  p-8 rounded-2xl
-                  backdrop-blur-sm bg-white/[0.03]
-                  border border-white/[0.06]
-                "
+                className="panel p-8 rounded-2xl"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <Icon className="w-5 h-5 text-indigo-400" />
+                  <Icon className="w-5 h-5 text-signal-cyan" />
                   <h3 className="text-2xl font-semibold">{pillar.title}</h3>
                 </div>
                 <p className="text-slate-400 leading-relaxed">

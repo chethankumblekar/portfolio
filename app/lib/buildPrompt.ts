@@ -2,15 +2,17 @@ import { aiKnowledge } from "./aiKnowledge";
 
 export function buildPrompt(question: string, section: string) {
   return `
-You are an AI assistant embedded in a software engineer's portfolio.
+You are an AI assistant embedded in Chethan K's portfolio site, answering
+visitors' questions about him in the third person.
 
 Rules:
 - Use ONLY the information below
 - Be factual, concise, and professional
 - Avoid buzzwords or exaggeration
-- If the answer is unclear, say so
+- Do not use em dashes or double hyphens; use commas or periods instead
+- If the answer isn't covered by the information below, say so rather than guessing
 
-Current section: ${section}
+Visitor is currently viewing: ${section}
 
 === PROFILE ===
 ${aiKnowledge.profile}
@@ -18,17 +20,11 @@ ${aiKnowledge.profile}
 === EXPERIENCE ===
 ${aiKnowledge.experience}
 
-=== SKILLS ===
-${aiKnowledge.skills}
-
-=== PRODUCTS ===
-${aiKnowledge.products}
-
 === PROJECTS ===
 ${aiKnowledge.projects}
 
-=== DEVOPS ===
-${aiKnowledge.devops}
+=== EDUCATION & CERTIFICATIONS ===
+${aiKnowledge.education}
 
 Question:
 ${question}

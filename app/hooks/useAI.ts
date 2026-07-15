@@ -8,37 +8,51 @@ export function useAI() {
     setAnswer("");
     setLoading(true);
 
-    const res = await fetch("/api/ai", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question, section }),
-    });
+    try {
+      const res = await fetch("/api/ai", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question, section }),
+      });
 
-    const reader = res.body!.getReader();
-    const decoder = new TextDecoder();
+      if (!res.ok || !res.body) {
+        setAnswer(
+          "The AI assistant is temporarily unavailable. Please try again later."
+        );
+        setLoading(false);
+        return;
+      }
 
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
 
-      const chunk = decoder.decode(value);
-      const lines = chunk.split("\n");
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
 
-      for (const line of lines) {
-        if (!line.startsWith("data: ")) continue;
-        if (line === "data: [DONE]") {
-          setLoading(false);
-          return;
-        }
+        const chunk = decoder.decode(value);
+        const lines = chunk.split("\n");
 
-        try {
-          const json = JSON.parse(line.replace("data: ", ""));
-          const token = json.choices?.[0]?.delta?.content;
-          if (token) setAnswer((prev) => prev + token);
-        } catch {
-          // ignore malformed chunks
+        for (const line of lines) {
+          if (!line.startsWith("data: ")) continue;
+          if (line === "data: [DONE]") {
+            setLoading(false);
+            return;
+          }
+
+          try {
+            const json = JSON.parse(line.replace("data: ", ""));
+            const token = json.choices?.[0]?.delta?.content;
+            if (token) setAnswer((prev) => prev + token);
+          } catch {
+            // ignore malformed chunks
+          }
         }
       }
+    } catch {
+      setAnswer(
+        "The AI assistant is temporarily unavailable. Please try again later."
+      );
     }
 
     setLoading(false);

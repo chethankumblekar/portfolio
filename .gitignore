@@ -66,6 +66,16 @@ temp/
 !.vscode/extensions.json
 
 # ===============================
+# JetBrains IDEs
+# ===============================
+.idea/
+
+# ===============================
+# Claude Code (local settings)
+# ===============================
+.claude/settings.local.json
+
+# ===============================
 # Prettier / ESLint
 # ===============================
 .eslintcache

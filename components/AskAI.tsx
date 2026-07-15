@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { useAI } from "@/app/hooks/useAI";
 import { MessageSquare, X, Send } from "lucide-react";
 import ReactMarkdown from "react-markdown";
@@ -12,7 +12,23 @@ type Message = {
   content: string;
 };
 
-export default function FloatingAIChat({ section }: { section: string }) {
+const sectionLabels: Record<string, string> = {
+  "/": "Home",
+  "/case-studies": "Case Studies",
+  "/skills": "Skills",
+  "/experience": "Experience",
+  "/resume": "Resume",
+};
+
+function sectionFromPathname(pathname: string) {
+  if (sectionLabels[pathname]) return sectionLabels[pathname];
+  if (pathname.startsWith("/projects/")) return "Project Detail";
+  return "Home";
+}
+
+export default function FloatingAIChat() {
+  const pathname = usePathname();
+  const section = sectionFromPathname(pathname);
   const { ask, answer, loading } = useAI();
 
   const [open, setOpen] = useState(false);
@@ -26,7 +42,7 @@ export default function FloatingAIChat({ section }: { section: string }) {
   }, [messages]);
 
   const handleSend = async () => {
-    if (!input.trim()) return;
+    if (!input.trim() || loading) return;
 
     const question = input;
     setInput("");
@@ -61,72 +77,81 @@ export default function FloatingAIChat({ section }: { section: string }) {
   return (
     <>
       {/* FLOATING BUTTON */}
-      <button
-        onClick={() => setOpen(true)}
-        className="
-          fixed bottom-6 right-6 z-50
-          w-14 h-14 rounded-full
-          bg-indigo-500 hover:bg-indigo-400
-          text-white
-          flex items-center justify-center
-          shadow-lg shadow-indigo-500/30
-          transition
-        "
-      >
-        <MessageSquare className="w-6 h-6" />
-      </button>
+      <div className="fixed bottom-6 right-6 z-50 w-fit">
+        <button
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? "Close AI assistant" : "Ask AI about Chethan"}
+          className="
+            w-14 h-14 rounded-full
+            panel
+            text-signal-cyan
+            flex items-center justify-center
+            hover:border-signal-cyan/40
+            transition
+          "
+        >
+          {open ? (
+            <X className="w-5 h-5" />
+          ) : (
+            <MessageSquare className="w-5 h-5" />
+          )}
+        </button>
+      </div>
 
       {/* CHAT PANEL */}
       {open && (
+        <div className="fixed bottom-24 right-6 z-50 w-fit">
         <div
           className="
-            fixed bottom-6 right-6 z-50
-            w-[380px] max-h-[540px]
+            w-[380px] max-w-[calc(100vw-3rem)] max-h-[540px]
             rounded-2xl
-            bg-[#0b0f1a]
-            border border-white/10
-            backdrop-blur-xl
+            panel
             flex flex-col
-            shadow-2xl
+            overflow-hidden
           "
         >
           {/* HEADER */}
-          <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-white/[0.08]">
             <div>
               <p className="text-sm font-medium text-white">
                 Ask about Chethan
               </p>
-              <p className="text-xs text-slate-400">AI Assistant</p>
+              <p className="font-mono-eyebrow text-[10px] uppercase text-slate-500">
+                AI Assistant · {section}
+              </p>
             </div>
-            <button onClick={() => setOpen(false)}>
-              <X className="w-5 h-5 text-slate-400 hover:text-white" />
+            <button onClick={() => setOpen(false)} aria-label="Close">
+              <X className="w-4 h-4 text-slate-400 hover:text-white" />
             </button>
           </div>
 
           {/* MESSAGES */}
           <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+            {messages.length === 0 && (
+              <p className="text-sm text-slate-500 leading-relaxed">
+                Ask about Chethan&apos;s experience, skills, or projects.
+                Answers are grounded in the content of this site.
+              </p>
+            )}
+
             {messages.map((msg, i) => (
               <div
                 key={i}
                 className={`max-w-[85%] text-sm leading-relaxed ${
                   msg.role === "user"
-                    ? "ml-auto bg-indigo-500 text-white rounded-2xl rounded-br-sm px-4 py-2"
-                    : "mr-auto bg-white/5 text-slate-300 rounded-2xl rounded-bl-sm px-4 py-2"
+                    ? "ml-auto bg-signal-cyan/15 text-white rounded-2xl rounded-br-sm px-4 py-2"
+                    : "mr-auto bg-white/[0.05] text-slate-300 rounded-2xl rounded-bl-sm px-4 py-2"
                 }`}
               >
                 {msg.role === "assistant" ? (
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     components={{
-                      code({ inline, children }: any) {
-                        return inline ? (
-                          <code className="px-1 py-0.5 rounded bg-black/40 text-indigo-300">
+                      code({ children }) {
+                        return (
+                          <code className="px-1 py-0.5 rounded bg-black/40 text-signal-cyan">
                             {children}
                           </code>
-                        ) : (
-                          <pre className="mt-2 p-3 rounded-lg bg-black/60 overflow-x-auto text-xs">
-                            <code>{children}</code>
-                          </pre>
                         );
                       },
                       a({ children, href }) {
@@ -135,7 +160,7 @@ export default function FloatingAIChat({ section }: { section: string }) {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-indigo-400 underline"
+                            className="text-signal-cyan underline"
                           >
                             {children}
                           </a>
@@ -156,8 +181,8 @@ export default function FloatingAIChat({ section }: { section: string }) {
                   msg.content
                 )}
 
-                {loading && msg.role === "assistant" && (
-                  <span className="animate-pulse"> ▋</span>
+                {loading && msg.role === "assistant" && !msg.content && (
+                  <span className="animate-pulse text-signal-cyan"> ▋</span>
                 )}
               </div>
             ))}
@@ -165,35 +190,39 @@ export default function FloatingAIChat({ section }: { section: string }) {
           </div>
 
           {/* INPUT */}
-          <div className="p-3 border-t border-white/10">
+          <div className="p-3 border-t border-white/[0.08]">
             <div className="flex items-center gap-2">
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
                 placeholder="Ask something..."
-                disabled={true}
+                disabled={loading}
                 className="
                   flex-1 px-3 py-2 rounded-lg
-                  bg-black/40 border border-white/10
-                  text-sm text-white
-                  focus:outline-none
+                  bg-black/30 border border-white/[0.08]
+                  text-sm text-white placeholder:text-slate-600
+                  focus:outline-none focus:border-signal-cyan/40
+                  disabled:opacity-60
                 "
               />
               <button
                 onClick={handleSend}
-                disabled={loading}
+                disabled={loading || !input.trim()}
+                aria-label="Send"
                 className="
                   p-2 rounded-lg
-                  bg-indigo-500 hover:bg-indigo-400
-                  disabled:opacity-50
+                  bg-signal-cyan/15 hover:bg-signal-cyan/25
+                  text-signal-cyan
+                  disabled:opacity-40
                   transition
                 "
               >
-                <Send className="w-4 h-4 text-white" />
+                <Send className="w-4 h-4" />
               </button>
             </div>
           </div>
+        </div>
         </div>
       )}
     </>

@@ -13,25 +13,52 @@ export async function POST(req: NextRequest) {
 
   const prompt = buildPrompt(question, section);
 
-  const stream = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
-    stream: true,
-    messages: [
-      {
-        role: "system",
-        content: prompt,
-      },
-    ],
-  });
+  let stream;
+  try {
+    stream = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      stream: true,
+      messages: [
+        {
+          role: "system",
+          content: prompt,
+        },
+      ],
+    });
+  } catch {
+    return new Response(
+      JSON.stringify({
+        error: "The AI assistant is temporarily unavailable. Please try again later.",
+      }),
+      { status: 502, headers: { "Content-Type": "application/json" } }
+    );
+  }
 
   const encoder = new TextEncoder();
 
   return new Response(
     new ReadableStream({
       async start(controller) {
-        for await (const chunk of stream) {
+        try {
+          for await (const chunk of stream) {
+            controller.enqueue(
+              encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`)
+            );
+          }
+        } catch {
           controller.enqueue(
-            encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`)
+            encoder.encode(
+              `data: ${JSON.stringify({
+                choices: [
+                  {
+                    delta: {
+                      content:
+                        "\n\nSomething went wrong while generating a response. Please try again.",
+                    },
+                  },
+                ],
+              })}\n\n`
+            )
           );
         }
         controller.enqueue(encoder.encode("data: [DONE]\n\n"));

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Global Background & Typography ===== */
+/* ===== Mission Control — Global Background & Typography ===== */
 html,
 body {
   margin: 0;
@@ -12,35 +12,26 @@ body {
 body {
   background:
     radial-gradient(
-      1200px 600px at 15% -10%,
-      rgba(99, 102, 241, 0.18),
+      1100px 550px at 12% -8%,
+      rgba(34, 211, 238, 0.1),
       transparent 60%
     ),
     radial-gradient(
-      900px 500px at 85% 10%,
-      rgba(14, 165, 233, 0.15),
+      800px 500px at 88% 6%,
+      rgba(52, 211, 153, 0.07),
       transparent 55%
     ),
-    #020617;
-  color: white;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+    #05070a;
+  color: #e5eaf0;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
 }
 
 h1,
 h2,
 h3 {
   letter-spacing: -0.03em;
+  color: #f5f8fb;
 }
 
 p {
@@ -66,5 +57,54 @@ p {
 }
 
 ::selection {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(34, 211, 238, 0.28);
+}
+
+/* ===== Mission Control primitives ===== */
+
+.font-mono-eyebrow {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  letter-spacing: 0.16em;
+}
+
+.panel {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(34, 211, 238, 0.5),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.panel:hover::before {
+  opacity: 1;
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.35);
+}
+
+/* thin scrollbar to match the console feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #05070a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2430;
+  border-radius: 999px;
 }

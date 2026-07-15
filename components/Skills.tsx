@@ -1,17 +1,10 @@
 "use client";
 
 import { motion, easeOut } from "framer-motion";
-import {
-  Layout,
-  Server,
-  Cloud,
-  GitBranch,
-  ShieldCheck,
-  TestTube,
-  Network,
-  Settings,
-  Award,
-} from "lucide-react";
+import { Award } from "lucide-react";
+import Credentials from "./Credentials";
+import { skillZones } from "@/data/skills";
+import { certifications } from "@/data/credentials";
 
 /* ================= ANIMATION VARIANTS ================= */
 
@@ -45,41 +38,24 @@ const pillVariants = {
   },
 };
 
-/* ================= VERIFIED LEARNING ================= */
-
-const learningBadges = [
-  {
-    label:
-      "Azure Solutions Architect Expert (AZ-305): Identity, Governance & Monitoring",
-    provider: "Pluralsight",
-    link: "https://app.pluralsight.com/achievements/share/b14d9f1d-7ffb-4664-9128-9250ffd8772f",
-    zones: ["Cloud & Platform Layer"],
-  },
-  {
-    label:
-      "Azure Solutions Architect Expert (AZ-305): Networking, Storage & Compute",
-    provider: "Pluralsight",
-    link: "https://app.pluralsight.com/achievements/share/cbeee633-c06f-4d5c-aa56-4f473c13602a",
-    zones: ["Cloud & Platform Layer"],
-  },
-];
-
 /* ================= BADGE COMPONENT ================= */
 
 function LearningBadges({ zone }: { zone: string }) {
-  const badges = learningBadges.filter((b) => b.zones.includes(zone));
+  const badges = certifications.filter(
+    (c) => c.link && c.zones?.includes(zone)
+  );
   if (!badges.length) return null;
 
   return (
     <div className="mt-12">
-      <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">
+      <p className="font-mono-eyebrow text-xs uppercase text-slate-500 mb-4">
         Verified Learning
       </p>
 
       <div className="flex flex-wrap gap-3">
         {badges.map((badge) => (
           <a
-            key={badge.label}
+            key={badge.title}
             href={badge.link}
             target="_blank"
             rel="noopener noreferrer"
@@ -88,137 +64,22 @@ function LearningBadges({ zone }: { zone: string }) {
               px-3 py-1.5
               rounded-full
               text-xs
-              bg-indigo-500/10
-              border border-indigo-500/20
-              text-indigo-300
-              hover:bg-indigo-500/20
+              bg-signal-cyan/10
+              border border-signal-cyan/20
+              text-signal-cyan
+              hover:bg-signal-cyan/20
               transition
             "
           >
-            <Award className="w-4 h-4 text-indigo-400" />
-            <span className="font-medium">{badge.provider}</span>
-            <span className="opacity-80">— {badge.label}</span>
+            <Award className="w-4 h-4 text-signal-cyan" />
+            <span className="font-medium">{badge.note}</span>
+            <span className="opacity-80">, {badge.title}</span>
           </a>
         ))}
       </div>
     </div>
   );
 }
-
-/* ================= SKILL ZONES ================= */
-
-const skillZones = [
-  {
-    zone: "Application Layer",
-    description:
-      "Designing and building user-facing applications and backend services that form the functional core of enterprise products.",
-    groups: [
-      {
-        title: "Full-Stack Engineering",
-        icon: Layout,
-        items: [
-          "C#, JavaScript, TypeScript, Python, SQL",
-          "React, Redux, SPA Architecture",
-          "HTML, CSS, SCSS, Tailwind CSS",
-          "Blazor, SignalR",
-        ],
-      },
-      {
-        title: "Backend & API Development",
-        icon: Server,
-        items: [
-          ".NET & ASP.NET Core (Web API)",
-          "RESTful API Design",
-          "EF Core, LINQ",
-          "CQRS, SOLID, Design Patterns",
-          "Async/Await, Dependency Injection",
-        ],
-      },
-    ],
-  },
-  {
-    zone: "Cloud & Platform Layer",
-    description:
-      "Architecting and operating scalable, multi-tenant cloud platforms on Microsoft Azure.",
-    groups: [
-      {
-        title: "Cloud Engineering (Azure)",
-        icon: Cloud,
-        items: [
-          "Azure App Services, Functions & AKS",
-          "Container Networking & Ingress",
-          "Azure SQL, Storage, Cosmos DB",
-          "Service Bus, AI Search",
-          "Application Gateway, Load Balancer",
-          "Azure AD B2C / CIAM",
-        ],
-      },
-      {
-        title: "DevOps & Platform Automation",
-        icon: GitBranch,
-        items: [
-          "Azure DevOps CI/CD, GitHub Actions",
-          "Docker (Image Build & Runtime)",
-          "Infrastructure as Code: Bicep, ARM, Terraform",
-          "Kubernetes (Deployment & Operations)",
-          "Zero-Touch Provisioning & Automation",
-        ],
-      },
-    ],
-  },
-  {
-    zone: "Security & Reliability Layer",
-    description:
-      "Ensuring production systems are secure, observable, and resilient under real-world workloads.",
-    groups: [
-      {
-        title: "Security & Identity",
-        icon: ShieldCheck,
-        items: [
-          "JWT, OAuth 2.0, OpenID, SAML",
-          "SSL/TLS, OWASP Practices",
-          "Azure Key Vault",
-          "Secrets & Access Control",
-        ],
-      },
-      {
-        title: "Testing & Observability",
-        icon: TestTube,
-        items: [
-          "xUnit, VSTest",
-          "Postman, Fiddler",
-          "Application Insights",
-          "Azure Monitor",
-          "Prometheus, OpenTelemetry",
-          "Uptime Kuma",
-        ],
-      },
-    ],
-  },
-  {
-    zone: "Integration & Engineering Practices",
-    description:
-      "Integrating systems while maintaining quality, documentation, and delivery standards across teams.",
-    groups: [
-      {
-        title: "APIs & Integrations",
-        icon: Network,
-        items: ["RESTful APIs", "SendGrid", "Twilio", "Webhooks"],
-      },
-      {
-        title: "Tools & Practices",
-        icon: Settings,
-        items: [
-          "SSMS, SSRS",
-          "Redis, MySQL",
-          "EDMS Domain Expertise",
-          "DocFX Documentation",
-          "Scrum / Agile Delivery",
-        ],
-      },
-    ],
-  },
-];
 
 /* ================= MAIN COMPONENT ================= */
 
@@ -251,13 +112,7 @@ export default function Skills() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              className="
-                p-10
-                rounded-3xl
-                backdrop-blur-sm
-                bg-white/[0.03]
-                border border-white/[0.06]
-              "
+              className="panel p-10 rounded-3xl"
             >
               {/* ZONE HEADER */}
               <div className="mb-12">
@@ -276,7 +131,7 @@ export default function Skills() {
                   return (
                     <motion.div key={group.title} variants={groupVariants}>
                       <div className="flex items-center gap-3 mb-4">
-                        <span className="w-9 h-9 flex items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400">
+                        <span className="w-9 h-9 flex items-center justify-center rounded-xl bg-signal-cyan/10 text-signal-cyan">
                           <Icon className="w-5 h-5" />
                         </span>
                         <h4 className="text-xl font-semibold">
@@ -312,6 +167,8 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
+
+        <Credentials />
       </div>
     </section>
   );
