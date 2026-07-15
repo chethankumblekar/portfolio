@@ -39,7 +39,7 @@ const pillars = [
 export default function Pillars() {
   return (
     <section className="py-28">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16">
+     <div className="relative w-full max-w-[110rem] mx-auto px-6 md:px-12 lg:px-16 space-y-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

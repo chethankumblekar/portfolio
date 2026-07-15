@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function CaseStudies() {
   return (
-    <main className="max-w-[1400px] mx-auto pt-40 pb-28 px-6 md:px-12 lg:px-16">
+    <main className="max-w-[110rem] mx-auto pt-40 pb-28 px-6 md:px-12 lg:px-16">
       <p className="font-mono-eyebrow text-signal-cyan text-sm mb-4 uppercase">
         $ ls ./production-systems
       </p>

@@ -45,7 +45,7 @@ const metricGroups = [
 export default function Metrics() {
   return (
     <section className="py-24">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 space-y-20">
+      <div className="relative w-full max-w-[110rem] mx-auto px-6 md:px-12 lg:px-16 space-y-20">
         {metricGroups.map((group, i) => (
           <div key={group.title}>
             <motion.h3

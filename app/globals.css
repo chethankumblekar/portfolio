@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* ===== Mission Control — Global Background & Typography ===== */
+
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   margin: 0;
