@@ -4,17 +4,23 @@ import { buildPrompt } from "@/app/lib/buildPrompt";
 import { NextRequest } from "next/server";
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
-});
-
 export async function POST(req: NextRequest) {
+  if (!process.env.OPENAI_API_KEY) {
+    return new Response(
+      JSON.stringify({
+        error: "The AI assistant is temporarily unavailable. Please try again later.",
+      }),
+      { status: 502, headers: { "Content-Type": "application/json" } }
+    );
+  }
+
   const { question, section } = await req.json();
 
   const prompt = buildPrompt(question, section);
 
   let stream;
   try {
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
     stream = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       stream: true,
