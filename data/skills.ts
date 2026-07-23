@@ -32,7 +32,7 @@ export const skillZones: SkillZone[] = [
         title: "Full-Stack Engineering",
         icon: Layout,
         items: [
-          "C#, JavaScript, TypeScript, Python, SQL",
+          "C#, JavaScript, TypeScript, Python, Go, SQL",
           "React, Redux, SPA Architecture",
           "HTML, CSS, SCSS, Tailwind CSS",
           "Blazor, SignalR",
@@ -74,7 +74,9 @@ export const skillZones: SkillZone[] = [
         items: [
           "Azure DevOps CI/CD (YAML), GitHub Actions",
           "Terraform, Bicep, ARM Templates",
+          "ArgoCD, GitOps",
           "Docker & Azure Container Registry",
+          "Backstage (Internal Developer Platform), self-service golden paths",
           "PowerShell automation, zero-touch provisioning",
           "GitHub Copilot & AI coding agents",
         ],
@@ -94,6 +96,8 @@ export const skillZones: SkillZone[] = [
           "JWT, OAuth 2.0, OpenID, SAML",
           "SSL/TLS, OWASP Practices, SAST",
           "Azure Key Vault",
+          "OPA/Gatekeeper, Rego policy authoring",
+          "SLSA provenance, cosign signing, SBOM generation",
         ],
       },
       {
