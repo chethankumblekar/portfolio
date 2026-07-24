@@ -1,0 +1,7 @@
+# Generated graphify outputs — large, and re-written on every commit via the
+# post-commit hook, so leaving them un-ignored invalidates Claude Code's prompt
+# cache on every turn. Query them via `graphify query`/`path`/`explain` instead
+# of reading the raw files.
+graphify-out/graph.json
+graphify-out/graph.html
+graphify-out/manifest.json
