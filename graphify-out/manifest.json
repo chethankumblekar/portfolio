@@ -250,9 +250,9 @@
     "semantic_hash": "fe0838cfd6cf6cf96361cac4da87a204"
   },
   "CLAUDE.md": {
-    "mtime": 1784916161.79705,
-    "ast_hash": "7f5e14d7e15805fcacc62cbd4c1aad26",
-    "semantic_hash": "7f5e14d7e15805fcacc62cbd4c1aad26"
+    "mtime": 1784933940.1108832,
+    "ast_hash": "fc10f1121551fe4eeee65d151be88104",
+    "semantic_hash": ""
   },
   "README.md": {
     "mtime": 1784177395.9528077,
@@ -263,11 +263,6 @@
     "mtime": 1784177395.9865754,
     "ast_hash": "6a87b999afdc5fb610da1c24aef854be",
     "semantic_hash": "6a87b999afdc5fb610da1c24aef854be"
-  },
-  "public/architecture/chat-app-architecture.png": {
-    "mtime": 1784177395.979209,
-    "ast_hash": "483cf85927850db37e4c353f1be08524",
-    "semantic_hash": "483cf85927850db37e4c353f1be08524"
   },
   "public/chethan.jpeg": {
     "mtime": 1784177395.981465,

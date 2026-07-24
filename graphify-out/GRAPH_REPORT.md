@@ -1,12 +1,18 @@
-# Graph Report - .  (2026-07-25)
+# Graph Report - portfolio  (2026-07-25)
 
 ## Corpus Check
-- Corpus is ~15,410 words - fits in a single context window. You may not need a graph.
+- 52 files · ~15,379 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 260 nodes · 326 edges · 24 communities (17 shown, 7 thin omitted)
+- 259 nodes · 326 edges · 23 communities (17 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
-- Token cost: 0 input · 138,907 output
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `59ba60ca`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Career Facts & Docs
@@ -28,7 +34,6 @@
 - PostCSS Config (mjs)
 - Profile Photo
 - Vercel Framework Tag
-- Architecture Placeholder Img
 
 ## God Nodes (most connected - your core abstractions)
 1. `portfolio-maintainer Agent Definition` - 21 edges
@@ -62,7 +67,7 @@
 - **Canonical career facts (Ascertra + Vela Technologies India roles) repeated consistently across CLAUDE.md, portfolio-maintainer.md and resume.pdf** — claude_overview, _claude_agents_portfolio_maintainer_overview, public_resume_overview, claude_ascertra_role, claude_vela_technologies_india_role [INFERRED 0.85]
 - **Headline resume metrics (uptime, tenants, pipelines, provisioning reduction) kept consistent across all three project docs** — claude_overview, _claude_agents_portfolio_maintainer_overview, public_resume_overview, claude_uptime_metric_997, claude_tenant_platform_metric_60, claude_cicd_pipeline_metric_20, claude_manual_provisioning_reduction_metric_90 [INFERRED 0.85]
 
-## Communities (24 total, 7 thin omitted)
+## Communities (23 total, 6 thin omitted)
 
 ### Community 0 - "Career Facts & Docs"
 Cohesion: 0.13
@@ -121,9 +126,9 @@ Nodes (3): metricGroups, Metrics(), Pillars
   CLAUDE.md · relation: references
 
 ## Knowledge Gaps
-- **99 isolated node(s):** `metadata`, `profile`, `experienceSummary`, `projectsSummary`, `education` (+94 more)
+- **98 isolated node(s):** `metadata`, `profile`, `experienceSummary`, `projectsSummary`, `education` (+93 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -131,13 +136,13 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Chethan K Resume (public/resume.pdf)` and `RESUME_LINK / /resume route (links to Drive PDF; CLAUDE.md states no local resume.pdf exists)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **Why does `experience` connect `Experience & Milestones` to `AI Knowledge & Prompt`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Runtime Dependencies` to `Package Scripts`?**
   _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `ESLint / Lint Tooling` to `Package Scripts`?**
   _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **What connects `metadata`, `profile`, `experienceSummary` to the rest of the system?**
-  _99 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _98 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Career Facts & Docs` be split into smaller, more focused modules?**
   _Cohesion score 0.12688172043010754 - nodes in this community are weakly interconnected._
 - **Should `ESLint / Lint Tooling` be split into smaller, more focused modules?**
