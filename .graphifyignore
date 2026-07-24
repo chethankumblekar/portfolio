@@ -1,0 +1,9 @@
+# graphify's own skill/reference docs are about the tool, not this portfolio
+.claude/skills/graphify/
+
+# generic Next.js boilerplate icons — no semantic content
+public/file.svg
+public/globe.svg
+public/next.svg
+public/vercel.svg
+public/window.svg
