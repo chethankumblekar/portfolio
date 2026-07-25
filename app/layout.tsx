@@ -9,11 +9,11 @@ import AskAI from "../components/AskAI";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chethank.vercel.app"),
-  title: "Chethan K — Cloud · Platform · DevOps Engineer",
+  title: "Chethan K · Cloud · Platform · DevOps Engineer",
   description:
-    "DevOps & Cloud Engineer with 4+ years designing, building, and operating production-grade Azure infrastructure — AKS, CI/CD, and IaC sustaining 99.7% uptime across a 60+ tenant platform.",
+    "DevOps & Cloud Engineer with 4+ years designing, building, and operating production-grade Azure infrastructure, including AKS, CI/CD, and IaC, sustaining 99.7% uptime across a 60+ tenant platform.",
   openGraph: {
-    title: "Chethan K — Cloud · Platform · DevOps Engineer",
+    title: "Chethan K · Cloud · Platform · DevOps Engineer",
     description:
       "DevOps & Cloud Engineer with 4+ years designing, building, and operating production-grade Azure infrastructure at scale.",
     url: "https://chethank.vercel.app",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Chethan K — Cloud · Platform · DevOps Engineer",
+    title: "Chethan K · Cloud · Platform · DevOps Engineer",
     description:
       "DevOps & Cloud Engineer with 4+ years designing, building, and operating production-grade Azure infrastructure at scale.",
     images: ["/chethan.jpeg"],

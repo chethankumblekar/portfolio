@@ -38,7 +38,7 @@ export default function Hero() {
 
             <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl">
               I design, build, and operate production-grade cloud
-              infrastructure on Microsoft Azure — owning AKS, CI/CD,
+              infrastructure on Microsoft Azure, owning AKS, CI/CD,
               security, and observability end-to-end for a multi-tenant SaaS
               platform running 24x7 in production.
             </p>

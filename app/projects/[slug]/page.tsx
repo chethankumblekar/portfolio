@@ -48,7 +48,7 @@ export default async function ProjectPage({
 
         {project.confidential && (
           <p className="font-mono-eyebrow text-[11px] uppercase text-slate-500 mb-16">
-            🔒 Confidential System — details generalized to protect customer
+            🔒 Confidential System: details generalized to protect customer
             data
           </p>
         )}

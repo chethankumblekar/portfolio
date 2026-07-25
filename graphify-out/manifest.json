@@ -25,9 +25,9 @@
     "semantic_hash": "22f293bc75937882017e2aa43e2b68de"
   },
   "app/layout.tsx": {
-    "mtime": 1784177395.9579432,
-    "ast_hash": "d3d510b22577e3fe9dea7d66e1f97592",
-    "semantic_hash": "d3d510b22577e3fe9dea7d66e1f97592"
+    "mtime": 1784973471.020772,
+    "ast_hash": "bdfab718f69811c673420f5a546e9e92",
+    "semantic_hash": ""
   },
   "app/lib/aiKnowledge.ts": {
     "mtime": 1784177395.9582326,
@@ -45,9 +45,9 @@
     "semantic_hash": "199bfb9cdde4ac9da6c07ca38feb4238"
   },
   "app/projects/[slug]/page.tsx": {
-    "mtime": 1784177395.9606674,
-    "ast_hash": "99dca9665d1250a1c19e18627d8489f6",
-    "semantic_hash": "99dca9665d1250a1c19e18627d8489f6"
+    "mtime": 1784973703.3966653,
+    "ast_hash": "502b9bbff65f8d41b6aa947ccf6936a7",
+    "semantic_hash": ""
   },
   "app/projects/page.tsx": {
     "mtime": 1784177395.961174,
@@ -110,9 +110,9 @@
     "semantic_hash": "15307ecc687a52436d087826228ae2b7"
   },
   "components/Hero.tsx": {
-    "mtime": 1784177395.966844,
-    "ast_hash": "3d39b0330a6b4c9cd573f6ae143097a2",
-    "semantic_hash": "3d39b0330a6b4c9cd573f6ae143097a2"
+    "mtime": 1784973482.1042206,
+    "ast_hash": "5ab829650326c85910311bc025504a0a",
+    "semantic_hash": ""
   },
   "components/Metrics.tsx": {
     "mtime": 1784177395.967064,
@@ -120,9 +120,9 @@
     "semantic_hash": "f69b4ac2593c597d895d61061a4604ff"
   },
   "components/Milestones.tsx": {
-    "mtime": 1784177395.9674163,
-    "ast_hash": "216949e3488c6fe2836fad06706174e0",
-    "semantic_hash": "216949e3488c6fe2836fad06706174e0"
+    "mtime": 1784973289.2305055,
+    "ast_hash": "d7c153ca121a4ba3d3c04dc4b010c22e",
+    "semantic_hash": ""
   },
   "components/NetworkBackdrop.tsx": {
     "mtime": 1784177395.968166,
@@ -130,9 +130,9 @@
     "semantic_hash": "b0c377c0789a1ce72bf6502555cea7a5"
   },
   "components/Pillars.tsx": {
-    "mtime": 1784177395.9684665,
-    "ast_hash": "1e8d0ae9ceb1a416b940f539ac2ac486",
-    "semantic_hash": "1e8d0ae9ceb1a416b940f539ac2ac486"
+    "mtime": 1784973695.5933542,
+    "ast_hash": "d3ccea21bac72acc55559867393f58d7",
+    "semantic_hash": ""
   },
   "components/ProjectCard.tsx": {
     "mtime": 1784177395.9686704,
@@ -160,14 +160,14 @@
     "semantic_hash": "8d26a73dcbf67ee828e3d16ac1df02e5"
   },
   "data/experience.ts": {
-    "mtime": 1784177395.970144,
-    "ast_hash": "98c0532ee6de38eab7e3ca35ec0e90f6",
-    "semantic_hash": "98c0532ee6de38eab7e3ca35ec0e90f6"
+    "mtime": 1784973768.3256576,
+    "ast_hash": "fd905ac0b59326d120ffe076755b090d",
+    "semantic_hash": ""
   },
   "data/projects.ts": {
-    "mtime": 1784832684.3410707,
-    "ast_hash": "f45d05bf78cc1d518475969c62d49468",
-    "semantic_hash": "f45d05bf78cc1d518475969c62d49468"
+    "mtime": 1784975095.08877,
+    "ast_hash": "e0d295ce89dd26e72a3d6ebbfa92eb7c",
+    "semantic_hash": ""
   },
   "data/skills.ts": {
     "mtime": 1784832699.3515642,
@@ -175,7 +175,7 @@
     "semantic_hash": "381e5f2445b22f21e174b6cb056bed7b"
   },
   "data/socials.ts": {
-    "mtime": 1784177395.9708848,
+    "mtime": 1784970303.6730418,
     "ast_hash": "5224cf4edef9f2e18a4deb3b8c99fbcb",
     "semantic_hash": "5224cf4edef9f2e18a4deb3b8c99fbcb"
   },
@@ -190,7 +190,7 @@
     "semantic_hash": "6fab9cbf1b23423b57b2f99bdc2c3313"
   },
   "next-env.d.ts": {
-    "mtime": 1784832779.4306686,
+    "mtime": 1784975311.986361,
     "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
     "semantic_hash": "2a74d3909800ca5467fa83b0ab4a4890"
   },
@@ -200,9 +200,9 @@
     "semantic_hash": "11c6f66ff7ad2badaa50e8e0874498c2"
   },
   "package.json": {
-    "mtime": 1784177395.9778209,
-    "ast_hash": "2576f1a05a154410c8235b043da3da41",
-    "semantic_hash": "2576f1a05a154410c8235b043da3da41"
+    "mtime": 1784969341.8198185,
+    "ast_hash": "992ee9332342ccc33255723d11fa6abc",
+    "semantic_hash": ""
   },
   "postcss.config.js": {
     "mtime": 1784177395.9781165,
