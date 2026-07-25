@@ -7,31 +7,31 @@ const pillars = [
   {
     title: "Cloud Platform Architecture",
     description:
-      "Architecting and operating scalable Azure platforms — AKS, App Services, Front Door, and networking — for multi-tenant SaaS products serving 60+ customer environments with high availability and resilience.",
+      "Architecting and operating scalable Azure platforms, including AKS, App Services, Front Door, and networking, for multi-tenant SaaS products serving 60+ customer environments with high availability and resilience.",
     icon: Cloud,
   },
   {
     title: "DevOps & Infrastructure Automation",
     description:
-      "Owning 20+ CI/CD pipelines in Azure DevOps and automating infrastructure with Terraform, Bicep, and PowerShell — cutting manual provisioning effort by ~90% and enabling zero-downtime releases.",
+      "Owning 20+ CI/CD pipelines in Azure DevOps and automating infrastructure with Terraform, Bicep, and PowerShell, cutting manual provisioning effort by ~90% and enabling zero-downtime releases.",
     icon: GitBranch,
   },
   {
     title: "Observability & Reliability Engineering",
     description:
-      "Running production systems at 99.7% uptime under 24x7 on-call — full-stack observability with Prometheus, Grafana, and Azure Monitor, plus incident management, RCA, and capacity planning.",
+      "Running production systems at 99.7% uptime under 24x7 on-call, with full-stack observability via Prometheus, Grafana, and Azure Monitor, plus incident management, RCA, and capacity planning.",
     icon: Gauge,
   },
   {
     title: "Security & Identity Engineering",
     description:
-      "Owning production security through Microsoft Entra ID, Conditional Access, RBAC, Key Vault, and SAST — enforcing auditable, policy-governed access for external clients and internal teams alike.",
+      "Owning production security through Microsoft Entra ID, Conditional Access, RBAC, Key Vault, and SAST, enforcing auditable, policy-governed access for external clients and internal teams alike.",
     icon: ShieldCheck,
   },
   {
     title: "Full-Stack Software Engineering",
     description:
-      "Designing and shipping the systems that run on top of the platform — .NET Core APIs, React frontends, and CQRS-based services — end-to-end, from architecture to production support.",
+      "Designing and shipping the systems that run on top of the platform, including .NET Core APIs, React frontends, and CQRS-based services, end-to-end, from architecture to production support.",
     icon: Code2,
   },
 ];

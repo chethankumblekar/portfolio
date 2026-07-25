@@ -17,7 +17,7 @@ overview:
 "The EDMS platform is a large-scale enterprise SaaS system used by organizations to manage, process, and distribute sensitive documents. The system supports multiple customers across isolated environments and ensures secure storage, access control, and scalable document workflows.",
 
 responsibilities: [
-"Own end-to-end lifecycle of production Azure infrastructure — AKS, CI/CD, security, and observability — sustaining 99.7% uptime under 24x7 on-call",
+"Own end-to-end lifecycle of production Azure infrastructure, spanning AKS, CI/CD, security, and observability, sustaining 99.7% uptime under 24x7 on-call",
 "Designed and implemented backend APIs for document ingestion and processing",
 "Configured Azure Front Door with WAF policies and CDN routing for global traffic distribution",
 "Owned 20+ YAML-based Azure DevOps pipelines across dev, staging, and production with zero-downtime deployments",
@@ -424,7 +424,7 @@ tech: [
 {
 slug: "tenantforge",
 
-title: "TenantForge — Multi-Tenant Platform Engineering",
+title: "TenantForge: Multi-Tenant Platform Engineering",
 
 category: "Platform Engineering",
 
@@ -435,7 +435,7 @@ github:
 "https://github.com/chethankumblekar/tenantforge",
 
 overview:
-"TenantForge is a personal platform-engineering build that demonstrates how to stand up a secure, observable, cost-governed multi-tenant service the way a platform team would — each layer mapped explicitly to Microsoft's Well-Architected Framework pillars. It has two layers: the Platform, a self-service golden-path system for provisioning multi-tenant services on Azure, and the Reference Workload, a deliberately simple service that exists only to prove the platform works end-to-end. The primary Azure landing zone is fully modeled in Terraform; the AWS reference implementation of the same modules is the piece currently applied and verified against real infrastructure, alongside the containerized reference workload, CI/CD supply-chain pipeline, ArgoCD GitOps rollout, observability stack, tenant admission policy, and Backstage onboarding template.",
+"TenantForge is a personal platform-engineering build that demonstrates how to stand up a secure, observable, cost-governed multi-tenant service the way a platform team would, with each layer mapped explicitly to Microsoft's Well-Architected Framework pillars. It has two layers: the Platform, a self-service golden-path system for provisioning multi-tenant services on Azure, and the Reference Workload, a deliberately simple service that exists only to prove the platform works end-to-end. The primary Azure landing zone is fully modeled in Terraform; the AWS reference implementation of the same modules is the piece currently applied and verified against real infrastructure, alongside the containerized reference workload, CI/CD supply-chain pipeline, ArgoCD GitOps rollout, observability stack, tenant admission policy, and Backstage onboarding template.",
 
 features: [
 "Terraform IaC for an Azure landing zone plus a portable AWS reference implementation proving the modules aren't cloud-locked",
@@ -451,7 +451,7 @@ features: [
 challenges: [
 "Keeping the same Terraform modules portable across Azure and AWS without cloud-specific drift",
 "Enforcing tenant isolation and least-privilege identity without slowing down the self-service golden path",
-"Sequencing a large platform build so each layer — IaC, GitOps, observability, policy, FinOps — is independently verifiable before wiring the rest together",
+"Sequencing a large platform build so each layer (IaC, GitOps, observability, policy, FinOps) is independently verifiable before wiring the rest together",
 ],
 
 architecture: {
@@ -624,7 +624,7 @@ tech: [
 {
 slug: "policyforge",
 
-title: "PolicyForge — Policy-as-Code Scanner",
+title: "PolicyForge: Policy-as-Code Scanner",
 
 category: "Security Tooling",
 
@@ -635,11 +635,11 @@ github:
 "https://github.com/chethankumblekar/policyforge",
 
 overview:
-"PolicyForge is a Go CLI that scans Terraform, Bicep, Kubernetes, and Helm manifests against the same OPA/Rego rule packs through a shared canonical resource model — a rule written once evaluates Terraform and Bicep identically. Azure is treated as a first-class target, with Bicep and Azure Policy alignment fully supported rather than bolted on, and every scan generates an SBOM. Currently at v0.1, with the CLI running end-to-end against real IaC and rule packs embedded at build time.",
+"PolicyForge is a Go CLI that scans Terraform, Bicep, Kubernetes, and Helm manifests against the same OPA/Rego rule packs through a shared canonical resource model: a rule written once evaluates Terraform and Bicep identically. Azure is treated as a first-class target, with Bicep and Azure Policy alignment fully supported rather than bolted on, and every scan generates an SBOM. Currently at v0.1, with the CLI running end-to-end against real IaC and rule packs embedded at build time.",
 
 features: [
 "scan command with table, SARIF, and JSON output for Terraform, Bicep, Kubernetes, and Helm",
-"Custom policy authoring via --policy-dir — drop in .rego files with no fork required",
+"Custom policy authoring via --policy-dir: drop in .rego files with no fork required",
 "Supply-chain signing and attestation via cosign, SLSA provenance predicates, and the Rekor transparency log",
 "drift command comparing declared IaC against live Azure state via Azure Resource Graph",
 "13 built-in rules spanning CIS Azure Foundations, AWS S3/security-group checks, and Kubernetes Pod Security Standards",
@@ -650,7 +650,7 @@ features: [
 challenges: [
 "Designing one canonical resource model expressive enough for a single Rego rule pack to evaluate Terraform and Bicep identically",
 "Keeping Azure a first-class target rather than an AWS-first tool with Azure support bolted on",
-"Scoping a v0.1 core — CLI, rule packs, SBOM — that's useful standalone, with signing, drift detection, and the enterprise portal layered on without bloating it",
+"Scoping a v0.1 core (CLI, rule packs, SBOM) that's useful standalone, with signing, drift detection, and the enterprise portal layered on without bloating it",
 ],
 
 architecture: {
@@ -831,7 +831,7 @@ description:
 "Automated orphaned-resource detection tool that scans Azure subscriptions and alerts on wasted cloud spend.",
 
 overview:
-"Built while operating a 60+ tenant production platform, this tool continuously scans Azure resources across subscriptions to identify orphaned disks, unattached IPs, idle App Service plans, and other billed-but-unused resources — then raises automated alerts so waste gets cut before it shows up on the invoice.",
+"Built while operating a 60+ tenant production platform, this tool continuously scans Azure resources across subscriptions to identify orphaned disks, unattached IPs, idle App Service plans, and other billed-but-unused resources, then raises automated alerts so waste gets cut before it shows up on the invoice.",
 
 responsibilities: [
 "Designed detection rules for orphaned Azure resources (disks, IPs, NICs, idle compute)",
