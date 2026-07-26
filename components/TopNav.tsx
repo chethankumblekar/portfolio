@@ -15,9 +15,8 @@ const navItems: NavItem[] = [
   { label: "Case Studies", path: "/case-studies" },
   { label: "Skills", path: "/skills" },
   { label: "Experience", path: "/experience" },
-  { label: "Resume", path: "/resume" },
   {
-    label: "PDF",
+    label: "Resume",
     path: RESUME_PDF,
     download: true,
   },
