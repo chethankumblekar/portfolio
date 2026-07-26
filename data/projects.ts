@@ -32,10 +32,6 @@ deploymentModel: "Multi-tenant SaaS with isolated customer instances",
 features: [
 "Secure document storage and lifecycle management",
 "Role-based access control using CIAM and OAuth2",
-"Zero-downtime CI/CD pipelines with automated quality gates",
-"Full-stack observability with Prometheus, Grafana, and Azure Monitor",
-"Azure Front Door WAF/CDN for global routing and edge security",
-"High availability production environment sustaining 99.7% uptime",
 ],
 
 challenges: [
@@ -86,13 +82,6 @@ customers: {
 environments: "Multiple enterprise customers",
 accessModel: "Customer specific access control",
 },
-
-features: [
-"Secure document delivery",
-"Customer based access control",
-"OAuth authentication with external providers",
-"Audit logging for document access",
-],
 
 tech: [
 "C# / .NET",
@@ -837,11 +826,6 @@ responsibilities: [
 "Designed detection rules for orphaned Azure resources (disks, IPs, NICs, idle compute)",
 "Built automated alerting so findings reach the team without manual audits",
 "Integrated with existing Azure Monitor and cost management workflows",
-],
-
-features: [
-"Automated orphaned-resource scanning across subscriptions",
-"Alerting pipeline for wasted-spend findings",
 "Directly reduced monthly cloud spend on a live production platform",
 ],
 

@@ -7,19 +7,19 @@ const pillars = [
   {
     title: "Cloud Platform Architecture",
     description:
-      "Architecting and operating scalable Azure platforms, including AKS, App Services, Front Door, and networking, for multi-tenant SaaS products serving 60+ customer environments with high availability and resilience.",
+      "Architecting and operating scalable Azure platforms, including AKS, App Services, Front Door, and networking, for multi-tenant SaaS products with high availability and resilience.",
     icon: Cloud,
   },
   {
     title: "DevOps & Infrastructure Automation",
     description:
-      "Owning 20+ CI/CD pipelines in Azure DevOps and automating infrastructure with Terraform, Bicep, and PowerShell, cutting manual provisioning effort by ~90% and enabling zero-downtime releases.",
+      "Owning CI/CD pipelines in Azure DevOps and automating infrastructure with Terraform, Bicep, and PowerShell, cutting manual provisioning effort and enabling zero-downtime releases.",
     icon: GitBranch,
   },
   {
     title: "Observability & Reliability Engineering",
     description:
-      "Running production systems at 99.7% uptime under 24x7 on-call, with full-stack observability via Prometheus, Grafana, and Azure Monitor, plus incident management, RCA, and capacity planning.",
+      "Running production systems under 24x7 on-call, with full-stack observability via Prometheus, Grafana, and Azure Monitor, plus incident management, RCA, and capacity planning.",
     icon: Gauge,
   },
   {

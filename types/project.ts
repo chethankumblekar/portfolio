@@ -14,7 +14,6 @@ export interface Project {
 
   confidential?: boolean;
   github?: string;
-  
 
   overview?: string;
   responsibilities?: string[];
