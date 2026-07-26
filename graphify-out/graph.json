@@ -55,15 +55,180 @@
   },
   "nodes": [
     {
+      "label": "app/page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_page",
+      "community": 25,
+      "community_name": "aiKnowledge.ts",
+      "norm_label": "app/page.tsx"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "app_page_home",
+      "community": 25,
+      "community_name": "aiKnowledge.ts",
+      "norm_label": "home()"
+    },
+    {
+      "label": "resume/page.tsx",
+      "file_type": "code",
+      "source_file": "app/resume/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_resume_page",
+      "community": 28,
+      "community_name": "resume/page.tsx",
+      "norm_label": "resume/page.tsx"
+    },
+    {
+      "label": "ResumePage()",
+      "file_type": "code",
+      "source_file": "app/resume/page.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "app_resume_page_resumepage",
+      "community": 28,
+      "community_name": "resume/page.tsx",
+      "norm_label": "resumepage()"
+    },
+    {
+      "label": "FeaturedWork.tsx",
+      "file_type": "code",
+      "source_file": "components/FeaturedWork.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_featuredwork",
+      "community": 25,
+      "community_name": "aiKnowledge.ts",
+      "norm_label": "featuredwork.tsx"
+    },
+    {
+      "label": "FEATURED_SLUGS",
+      "file_type": "code",
+      "source_file": "components/FeaturedWork.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "components_featuredwork_featured_slugs",
+      "community": 25,
+      "community_name": "aiKnowledge.ts",
+      "norm_label": "featured_slugs"
+    },
+    {
+      "label": "FeaturedWork()",
+      "file_type": "code",
+      "source_file": "components/FeaturedWork.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "components_featuredwork_featuredwork",
+      "community": 25,
+      "community_name": "aiKnowledge.ts",
+      "norm_label": "featuredwork()"
+    },
+    {
+      "label": "TopNav.tsx",
+      "file_type": "code",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_topnav",
+      "community": 26,
+      "community_name": "TopNav.tsx",
+      "norm_label": "topnav.tsx"
+    },
+    {
+      "label": "NavItem",
+      "file_type": "code",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_topnav_navitem",
+      "community": 26,
+      "community_name": "TopNav.tsx",
+      "norm_label": "navitem"
+    },
+    {
+      "label": "navItems",
+      "file_type": "code",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "components_topnav_navitems",
+      "community": 26,
+      "community_name": "TopNav.tsx",
+      "norm_label": "navitems"
+    },
+    {
+      "label": "TopNav()",
+      "file_type": "code",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "components_topnav_topnav",
+      "community": 26,
+      "community_name": "TopNav.tsx",
+      "norm_label": "topnav()"
+    },
+    {
+      "label": "skills.ts",
+      "file_type": "code",
+      "source_file": "data/skills.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_skills",
+      "community": 6,
+      "community_name": "Skills & Credentials",
+      "norm_label": "skills.ts"
+    },
+    {
+      "label": "SkillGroup",
+      "file_type": "code",
+      "source_file": "data/skills.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "data_skills_skillgroup",
+      "community": 6,
+      "community_name": "Skills & Credentials",
+      "norm_label": "skillgroup"
+    },
+    {
+      "label": "SkillZone",
+      "file_type": "code",
+      "source_file": "data/skills.ts",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "data_skills_skillzone",
+      "community": 6,
+      "community_name": "Skills & Credentials",
+      "norm_label": "skillzone"
+    },
+    {
+      "label": "skillZones",
+      "file_type": "code",
+      "source_file": "data/skills.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "data_skills_skillzones",
+      "community": 6,
+      "community_name": "Skills & Credentials",
+      "norm_label": "skillzones"
+    },
+    {
       "label": "Metrics.tsx",
       "file_type": "code",
       "source_file": "components/Metrics.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "components_metrics",
-      "community": 12,
-      "community_name": "Homepage Hero & Metrics",
-      "norm_label": "metrics.tsx"
+      "community": 27,
+      "community_name": "Metrics.tsx",
+      "norm_label": "metrics.tsx",
+      "id": "components_metrics"
     },
     {
       "label": "metricGroups",
@@ -71,10 +236,10 @@
       "source_file": "components/Metrics.tsx",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "components_metrics_metricgroups",
-      "community": 12,
-      "community_name": "Homepage Hero & Metrics",
-      "norm_label": "metricgroups"
+      "community": 27,
+      "community_name": "Metrics.tsx",
+      "norm_label": "metricgroups",
+      "id": "components_metrics_metricgroups"
     },
     {
       "label": "Metrics()",
@@ -82,10 +247,10 @@
       "source_file": "components/Metrics.tsx",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "components_metrics_metrics",
-      "community": 12,
-      "community_name": "Homepage Hero & Metrics",
-      "norm_label": "metrics()"
+      "community": 27,
+      "community_name": "Metrics.tsx",
+      "norm_label": "metrics()",
+      "id": "components_metrics_metrics"
     },
     {
       "label": "Pillars.tsx",
@@ -93,10 +258,10 @@
       "source_file": "components/Pillars.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "components_pillars",
-      "community": 12,
-      "community_name": "Homepage Hero & Metrics",
-      "norm_label": "pillars.tsx"
+      "community": 29,
+      "community_name": "Pillars.tsx",
+      "norm_label": "pillars.tsx",
+      "id": "components_pillars"
     },
     {
       "label": "Pillars",
@@ -104,10 +269,10 @@
       "source_file": "components/Pillars.tsx",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "components_pillars_pillars",
-      "community": 12,
-      "community_name": "Homepage Hero & Metrics",
-      "norm_label": "pillars"
+      "community": 29,
+      "community_name": "Pillars.tsx",
+      "norm_label": "pillars",
+      "id": "components_pillars_pillars"
     },
     {
       "label": "experience.ts",
@@ -115,10 +280,10 @@
       "source_file": "data/experience.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "data_experience",
       "community": 5,
       "community_name": "Experience & Milestones",
-      "norm_label": "experience.ts"
+      "norm_label": "experience.ts",
+      "id": "data_experience"
     },
     {
       "label": "ExperienceEntry",
@@ -126,10 +291,10 @@
       "source_file": "data/experience.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "data_experience_experienceentry",
       "community": 5,
       "community_name": "Experience & Milestones",
-      "norm_label": "experienceentry"
+      "norm_label": "experienceentry",
+      "id": "data_experience_experienceentry"
     },
     {
       "label": "experience",
@@ -137,10 +302,10 @@
       "source_file": "data/experience.ts",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "data_experience_experience",
       "community": 5,
       "community_name": "Experience & Milestones",
-      "norm_label": "experience"
+      "norm_label": "experience",
+      "id": "data_experience_experience"
     },
     {
       "label": "projects.ts",
@@ -148,10 +313,10 @@
       "source_file": "data/projects.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "data_projects",
       "community": 4,
       "community_name": "Case Studies & Projects",
-      "norm_label": "projects.ts"
+      "norm_label": "projects.ts",
+      "id": "data_projects"
     },
     {
       "label": "projects",
@@ -159,10 +324,10 @@
       "source_file": "data/projects.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "data_projects_projects",
       "community": 4,
       "community_name": "Case Studies & Projects",
-      "norm_label": "projects"
+      "norm_label": "projects",
+      "id": "data_projects_projects"
     },
     {
       "label": "project.ts",
@@ -170,10 +335,10 @@
       "source_file": "types/project.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "types_project",
       "community": 4,
       "community_name": "Case Studies & Projects",
-      "norm_label": "project.ts"
+      "norm_label": "project.ts",
+      "id": "types_project"
     },
     {
       "label": "ProjectCustomers",
@@ -181,10 +346,10 @@
       "source_file": "types/project.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "types_project_projectcustomers",
       "community": 4,
       "community_name": "Case Studies & Projects",
-      "norm_label": "projectcustomers"
+      "norm_label": "projectcustomers",
+      "id": "types_project_projectcustomers"
     },
     {
       "label": "Project",
@@ -192,10 +357,10 @@
       "source_file": "types/project.ts",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "types_project_project",
       "community": 4,
       "community_name": "Case Studies & Projects",
-      "norm_label": "project"
+      "norm_label": "project",
+      "id": "types_project_project"
     },
     {
       "label": "layout.tsx",
@@ -1138,9 +1303,9 @@
       "source_file": "app/api/ai/route.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "route.ts",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_api_ai_route"
     },
     {
@@ -1149,9 +1314,9 @@
       "source_file": "app/api/ai/route.ts",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "post()",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_api_ai_route_post"
     },
     {
@@ -1226,9 +1391,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "aiknowledge.ts",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge"
     },
     {
@@ -1237,9 +1402,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "profile",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge_profile"
     },
     {
@@ -1248,9 +1413,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "experiencesummary",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge_experiencesummary"
     },
     {
@@ -1259,9 +1424,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "projectssummary",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge_projectssummary"
     },
     {
@@ -1270,9 +1435,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "education",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge_education"
     },
     {
@@ -1281,9 +1446,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "aiknowledge",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_aiknowledge_aiknowledge"
     },
     {
@@ -1292,9 +1457,9 @@
       "source_file": "app/lib/buildPrompt.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "buildprompt.ts",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_buildprompt"
     },
     {
@@ -1303,32 +1468,10 @@
       "source_file": "app/lib/buildPrompt.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 25,
+      "community": 5,
       "norm_label": "buildprompt()",
-      "community_name": "aiKnowledge.ts",
+      "community_name": "Experience & Milestones",
       "id": "app_lib_buildprompt_buildprompt"
-    },
-    {
-      "label": "app/page.tsx",
-      "file_type": "code",
-      "source_file": "app/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "app/page.tsx",
-      "community_name": "Homepage Hero & Metrics",
-      "id": "app_page"
-    },
-    {
-      "label": "Home()",
-      "file_type": "code",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "home()",
-      "community_name": "Homepage Hero & Metrics",
-      "id": "app_page_home"
     },
     {
       "label": "projects/page.tsx",
@@ -1351,50 +1494,6 @@
       "norm_label": "projectspage()",
       "community_name": "Projects Redirect Page",
       "id": "app_projects_page_projectspage"
-    },
-    {
-      "label": "resume/page.tsx",
-      "file_type": "code",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "resume/page.tsx",
-      "community_name": "Experience & Milestones",
-      "id": "app_resume_page"
-    },
-    {
-      "label": "ResumePage()",
-      "file_type": "code",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "resumepage()",
-      "community_name": "Experience & Milestones",
-      "id": "app_resume_page_resumepage"
-    },
-    {
-      "label": "Section()",
-      "file_type": "code",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L126",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "section()",
-      "community_name": "Experience & Milestones",
-      "id": "app_resume_page_section"
-    },
-    {
-      "label": "ResumeItem()",
-      "file_type": "code",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L143",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "resumeitem()",
-      "community_name": "Experience & Milestones",
-      "id": "app_resume_page_resumeitem"
     },
     {
       "label": "robots.ts",
@@ -1881,50 +1980,6 @@
       "id": "components_statusdot_statusdot"
     },
     {
-      "label": "TopNav.tsx",
-      "file_type": "code",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "topnav.tsx",
-      "community_name": "Experience & Milestones",
-      "id": "components_topnav"
-    },
-    {
-      "label": "NavItem",
-      "file_type": "code",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "navitem",
-      "community_name": "Experience & Milestones",
-      "id": "components_topnav_navitem"
-    },
-    {
-      "label": "navItems",
-      "file_type": "code",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "navitems",
-      "community_name": "Experience & Milestones",
-      "id": "components_topnav_navitems"
-    },
-    {
-      "label": "TopNav()",
-      "file_type": "code",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "topnav()",
-      "community_name": "Experience & Milestones",
-      "id": "components_topnav_topnav"
-    },
-    {
       "label": "credentials.ts",
       "file_type": "code",
       "source_file": "data/credentials.ts",
@@ -1967,61 +2022,6 @@
       "norm_label": "certifications",
       "community_name": "Skills & Credentials",
       "id": "data_credentials_certifications"
-    },
-    {
-      "label": "skills.ts",
-      "file_type": "code",
-      "source_file": "data/skills.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "skills.ts",
-      "community_name": "Skills & Credentials",
-      "id": "data_skills"
-    },
-    {
-      "label": "SkillGroup",
-      "file_type": "code",
-      "source_file": "data/skills.ts",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "skillgroup",
-      "community_name": "Skills & Credentials",
-      "id": "data_skills_skillgroup"
-    },
-    {
-      "label": "SkillZone",
-      "file_type": "code",
-      "source_file": "data/skills.ts",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "skillzone",
-      "community_name": "Skills & Credentials",
-      "id": "data_skills_skillzone"
-    },
-    {
-      "label": "skillZones",
-      "file_type": "code",
-      "source_file": "data/skills.ts",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "skillzones",
-      "community_name": "Skills & Credentials",
-      "id": "data_skills_skillzones"
-    },
-    {
-      "label": "skillHighlights",
-      "file_type": "code",
-      "source_file": "data/skills.ts",
-      "source_location": "L143",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "skillhighlights",
-      "community_name": "Skills & Credentials",
-      "id": "data_skills_skillhighlights"
     },
     {
       "label": "socials.ts",
@@ -2073,9 +2073,9 @@
       "source_file": "lib/constants.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 30,
       "norm_label": "constants.ts",
-      "community_name": "Experience & Milestones",
+      "community_name": "constants.ts",
       "id": "lib_constants"
     },
     {
@@ -3029,6 +3029,17 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_page",
+      "target": "app_page_home",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3036,9 +3047,144 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_metrics"
+      "target": "components_featuredwork",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_page",
+      "target": "components_featuredwork_featuredwork",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/resume/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_resume_page",
+      "target": "app_resume_page_resumepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/FeaturedWork.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_featuredwork",
+      "target": "components_featuredwork_featured_slugs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/FeaturedWork.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_featuredwork",
+      "target": "components_featuredwork_featuredwork",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_topnav",
+      "target": "components_topnav_navitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_topnav",
+      "target": "components_topnav_navitems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/TopNav.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_topnav",
+      "target": "components_topnav_topnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Skills.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_skills",
+      "target": "data_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/skills.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_skills",
+      "target": "data_skills_skillgroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/skills.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_skills",
+      "target": "data_skills_skillzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/skills.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_skills",
+      "target": "data_skills_skillzones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Skills.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_skills",
+      "target": "data_skills_skillzones"
     },
     {
       "relation": "contains",
@@ -3047,9 +3193,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "components_metrics",
-      "target": "components_metrics_metricgroups",
-      "confidence_score": 1.0
+      "target": "components_metrics_metricgroups"
     },
     {
       "relation": "contains",
@@ -3058,33 +3204,9 @@
       "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "components_metrics",
-      "target": "components_metrics_metrics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
       "target": "components_metrics_metrics"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_pillars"
     },
     {
       "relation": "contains",
@@ -3093,20 +3215,8 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "components_pillars",
-      "target": "components_pillars_pillars",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "app_page",
+      "source": "components_pillars",
       "target": "components_pillars_pillars"
     },
     {
@@ -3119,18 +3229,6 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "app_lib_aiknowledge",
-      "target": "data_experience"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
       "target": "data_experience"
     },
     {
@@ -3164,9 +3262,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "data_experience",
-      "target": "data_experience_experience",
-      "confidence_score": 1.0
+      "target": "data_experience_experience"
     },
     {
       "relation": "contains",
@@ -3175,9 +3273,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "data_experience",
-      "target": "data_experience_experienceentry",
-      "confidence_score": 1.0
+      "target": "data_experience_experienceentry"
     },
     {
       "relation": "imports",
@@ -3189,18 +3287,6 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "app_lib_aiknowledge",
-      "target": "data_experience_experience"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
       "target": "data_experience_experience"
     },
     {
@@ -3282,9 +3368,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "data_projects",
-      "target": "data_projects_projects",
-      "confidence_score": 1.0
+      "target": "data_projects_projects"
     },
     {
       "relation": "imports_from",
@@ -3294,9 +3380,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "data_projects",
-      "target": "types_project",
-      "confidence_score": 1.0
+      "target": "types_project"
     },
     {
       "relation": "imports",
@@ -3306,9 +3392,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "data_projects",
-      "target": "types_project_project",
-      "confidence_score": 1.0
+      "target": "types_project_project"
     },
     {
       "relation": "imports",
@@ -3377,9 +3463,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "types_project",
-      "target": "types_project_project",
-      "confidence_score": 1.0
+      "target": "types_project_project"
     },
     {
       "relation": "contains",
@@ -3388,9 +3474,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "types_project",
-      "target": "types_project_projectcustomers",
-      "confidence_score": 1.0
+      "target": "types_project_projectcustomers"
     },
     {
       "relation": "imports",
@@ -3483,18 +3569,6 @@
       "target": "app_projects_slug_page_projectpage"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_hero"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/Hero.tsx",
@@ -3515,18 +3589,6 @@
       "confidence_score": 1.0,
       "source": "components_hero",
       "target": "components_hero_hero"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_milestones"
     },
     {
       "relation": "contains",
@@ -4581,17 +4643,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "app_page_home"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "app/projects/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -4599,123 +4650,6 @@
       "confidence_score": 1.0,
       "source": "app_projects_page",
       "target": "app_projects_page_projectspage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L143",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "app_resume_page_resumeitem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "app_resume_page_resumepage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L126",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "app_resume_page_section"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "components_credentials"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "components_credentials_credentials"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "components_statusdot"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "components_statusdot_statusdot"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "data_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "data_skills_skillhighlights"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/resume/page.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_resume_page",
-      "target": "lib_constants"
     },
     {
       "relation": "contains",
@@ -5303,30 +5237,6 @@
       "target": "data_credentials_certifications"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Skills.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_skills",
-      "target": "data_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Skills.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_skills",
-      "target": "data_skills_skillzones"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/StatusDot.tsx",
@@ -5362,51 +5272,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_topnav",
-      "target": "components_topnav_navitem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_topnav",
-      "target": "components_topnav_navitems"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_topnav",
-      "target": "components_topnav_topnav"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/TopNav.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_topnav",
-      "target": "lib_constants"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "data/credentials.ts",
       "source_location": "L1",
       "weight": 1.0,
@@ -5436,50 +5301,6 @@
       "confidence_score": 1.0,
       "source": "data_credentials",
       "target": "data_credentials_education"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "data/skills.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "data_skills",
-      "target": "data_skills_skillgroup"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "data/skills.ts",
-      "source_location": "L143",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "data_skills",
-      "target": "data_skills_skillhighlights"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "data/skills.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "data_skills",
-      "target": "data_skills_skillzone"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "data/skills.ts",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "data_skills",
-      "target": "data_skills_skillzones"
     },
     {
       "relation": "contains",
@@ -6560,5 +6381,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "f05aa0f59e741f07184217ef3dde5e14fbcfa74e"
+  "built_at_commit": "000cc56ad3579cc4a5a89fb915589edf8474b1b1"
 }

@@ -58,14 +58,18 @@ signal "runs production systems," not generic SaaS/AI-startup indigo glass.
 
 ## Routes
 
-- `/` — Hero → Milestones (cinematic journey) → Metrics → Pillars
-- `/experience` — full detailed timeline
+- `/` — Hero → Milestones (current-role callout, no dates/chapters) →
+  `FeaturedWork` (3 hand-picked case studies, links to `/case-studies`) →
+  Metrics → Pillars
+- `/experience` — the one full detailed timeline (role history, impact
+  bullets, systems). `/resume` no longer duplicates this.
 - `/skills` — capability map + `Credentials` (education/certs)
 - `/case-studies` — project grid (canonical list; `/projects` redirects here)
 - `/projects/[slug]` — project detail page, including React Flow architecture
   diagrams for non-confidential projects
-- `/resume` — real resume content, embeds and offers `public/resume.pdf` for
-  download directly (`lib/constants.ts` → `RESUME_PDF`)
+- `/resume` — redirects straight to `public/resume.pdf`
+  (`lib/constants.ts` → `RESUME_PDF`); it is not a page. The nav's "Resume"
+  link downloads the PDF directly instead of routing here.
 
 ## Verification gotchas on this machine
 

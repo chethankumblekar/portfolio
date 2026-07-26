@@ -137,16 +137,3 @@ export const skillZones: SkillZone[] = [
     ],
   },
 ];
-
-// Curated top skills for condensed views (e.g. the /resume page). Keep this
-// in sync with skillZones above rather than maintaining a separate list.
-export const skillHighlights: string[] = [
-  "Azure Kubernetes Service (AKS)",
-  "Terraform / Bicep / ARM",
-  "Azure DevOps CI/CD",
-  "Azure Front Door (WAF/CDN)",
-  "Prometheus / Grafana",
-  "Microsoft Entra ID / RBAC",
-  "C# / .NET Core",
-  "React / TypeScript",
-];
