@@ -55,147 +55,37 @@
   },
   "nodes": [
     {
-      "label": "layout.tsx",
+      "label": "Metrics.tsx",
       "file_type": "code",
-      "source_file": "app/layout.tsx",
+      "source_file": "components/Metrics.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_layout",
-      "community": 24,
-      "community_name": "layout.tsx",
-      "norm_label": "layout.tsx"
-    },
-    {
-      "label": "metadata",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "app_layout_metadata",
-      "community": 24,
-      "community_name": "layout.tsx",
-      "norm_label": "metadata"
-    },
-    {
-      "label": "RootLayout()",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "app_layout_rootlayout",
-      "community": 24,
-      "community_name": "layout.tsx",
-      "norm_label": "rootlayout()"
-    },
-    {
-      "label": "[slug]/page.tsx",
-      "file_type": "code",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_projects_slug_page",
-      "community": 4,
-      "community_name": "Case Studies & Projects",
-      "norm_label": "[slug]/page.tsx"
-    },
-    {
-      "label": "Params",
-      "file_type": "code",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "app_projects_slug_page_params",
-      "community": 4,
-      "community_name": "Case Studies & Projects",
-      "norm_label": "params"
-    },
-    {
-      "label": "generateStaticParams()",
-      "file_type": "code",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "app_projects_slug_page_generatestaticparams",
-      "community": 4,
-      "community_name": "Case Studies & Projects",
-      "norm_label": "generatestaticparams()"
-    },
-    {
-      "label": "ProjectPage()",
-      "file_type": "code",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "app_projects_slug_page_projectpage",
-      "community": 4,
-      "community_name": "Case Studies & Projects",
-      "norm_label": "projectpage()"
-    },
-    {
-      "label": "Block()",
-      "file_type": "code",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "app_projects_slug_page_block",
-      "community": 4,
-      "community_name": "Case Studies & Projects",
-      "norm_label": "block()"
-    },
-    {
-      "label": "Hero.tsx",
-      "file_type": "code",
-      "source_file": "components/Hero.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_hero",
+      "id": "components_metrics",
       "community": 12,
       "community_name": "Homepage Hero & Metrics",
-      "norm_label": "hero.tsx"
+      "norm_label": "metrics.tsx"
     },
     {
-      "label": "headlineMetrics",
+      "label": "metricGroups",
       "file_type": "code",
-      "source_file": "components/Hero.tsx",
-      "source_location": "L8",
+      "source_file": "components/Metrics.tsx",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "components_hero_headlinemetrics",
+      "id": "components_metrics_metricgroups",
       "community": 12,
       "community_name": "Homepage Hero & Metrics",
-      "norm_label": "headlinemetrics"
+      "norm_label": "metricgroups"
     },
     {
-      "label": "Hero()",
+      "label": "Metrics()",
       "file_type": "code",
-      "source_file": "components/Hero.tsx",
-      "source_location": "L14",
+      "source_file": "components/Metrics.tsx",
+      "source_location": "L40",
       "_origin": "ast",
-      "id": "components_hero_hero",
+      "id": "components_metrics_metrics",
       "community": 12,
       "community_name": "Homepage Hero & Metrics",
-      "norm_label": "hero()"
-    },
-    {
-      "label": "Milestones.tsx",
-      "file_type": "code",
-      "source_file": "components/Milestones.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_milestones",
-      "community": 5,
-      "community_name": "Experience & Milestones",
-      "norm_label": "milestones.tsx"
-    },
-    {
-      "label": "Milestones()",
-      "file_type": "code",
-      "source_file": "components/Milestones.tsx",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "components_milestones_milestones",
-      "community": 5,
-      "community_name": "Experience & Milestones",
-      "norm_label": "milestones()"
+      "norm_label": "metrics()"
     },
     {
       "label": "Pillars.tsx",
@@ -273,6 +163,182 @@
       "community": 4,
       "community_name": "Case Studies & Projects",
       "norm_label": "projects"
+    },
+    {
+      "label": "project.ts",
+      "file_type": "code",
+      "source_file": "types/project.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "types_project",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "project.ts"
+    },
+    {
+      "label": "ProjectCustomers",
+      "file_type": "code",
+      "source_file": "types/project.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "types_project_projectcustomers",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "projectcustomers"
+    },
+    {
+      "label": "Project",
+      "file_type": "code",
+      "source_file": "types/project.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "types_project_project",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "project"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "layout.tsx",
+      "norm_label": "layout.tsx",
+      "id": "app_layout"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "layout.tsx",
+      "norm_label": "metadata",
+      "id": "app_layout_metadata"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "layout.tsx",
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
+    },
+    {
+      "label": "[slug]/page.tsx",
+      "file_type": "code",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "[slug]/page.tsx",
+      "id": "app_projects_slug_page"
+    },
+    {
+      "label": "Params",
+      "file_type": "code",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "params",
+      "id": "app_projects_slug_page_params"
+    },
+    {
+      "label": "generateStaticParams()",
+      "file_type": "code",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "generatestaticparams()",
+      "id": "app_projects_slug_page_generatestaticparams"
+    },
+    {
+      "label": "ProjectPage()",
+      "file_type": "code",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "projectpage()",
+      "id": "app_projects_slug_page_projectpage"
+    },
+    {
+      "label": "Block()",
+      "file_type": "code",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L148",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Case Studies & Projects",
+      "norm_label": "block()",
+      "id": "app_projects_slug_page_block"
+    },
+    {
+      "label": "Hero.tsx",
+      "file_type": "code",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "Homepage Hero & Metrics",
+      "norm_label": "hero.tsx",
+      "id": "components_hero"
+    },
+    {
+      "label": "headlineMetrics",
+      "file_type": "code",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "Homepage Hero & Metrics",
+      "norm_label": "headlinemetrics",
+      "id": "components_hero_headlinemetrics"
+    },
+    {
+      "label": "Hero()",
+      "file_type": "code",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "Homepage Hero & Metrics",
+      "norm_label": "hero()",
+      "id": "components_hero_hero"
+    },
+    {
+      "label": "Milestones.tsx",
+      "file_type": "code",
+      "source_file": "components/Milestones.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Experience & Milestones",
+      "norm_label": "milestones.tsx",
+      "id": "components_milestones"
+    },
+    {
+      "label": "Milestones()",
+      "file_type": "code",
+      "source_file": "components/Milestones.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Experience & Milestones",
+      "norm_label": "milestones()",
+      "id": "components_milestones_milestones"
     },
     {
       "label": "package.json",
@@ -1072,9 +1138,9 @@
       "source_file": "app/api/ai/route.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "route.ts",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_api_ai_route"
     },
     {
@@ -1083,9 +1149,9 @@
       "source_file": "app/api/ai/route.ts",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "post()",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_api_ai_route_post"
     },
     {
@@ -1160,9 +1226,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "aiknowledge.ts",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge"
     },
     {
@@ -1171,9 +1237,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "profile",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge_profile"
     },
     {
@@ -1182,9 +1248,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "experiencesummary",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge_experiencesummary"
     },
     {
@@ -1193,9 +1259,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "projectssummary",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge_projectssummary"
     },
     {
@@ -1204,9 +1270,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "education",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge_education"
     },
     {
@@ -1215,9 +1281,9 @@
       "source_file": "app/lib/aiKnowledge.ts",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "aiknowledge",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_aiknowledge_aiknowledge"
     },
     {
@@ -1226,9 +1292,9 @@
       "source_file": "app/lib/buildPrompt.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "buildprompt.ts",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_buildprompt"
     },
     {
@@ -1237,9 +1303,9 @@
       "source_file": "app/lib/buildPrompt.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 4,
+      "community": 25,
       "norm_label": "buildprompt()",
-      "community_name": "Case Studies & Projects",
+      "community_name": "aiKnowledge.ts",
       "id": "app_lib_buildprompt_buildprompt"
     },
     {
@@ -1617,39 +1683,6 @@
       "id": "components_footer_footer"
     },
     {
-      "label": "Metrics.tsx",
-      "file_type": "code",
-      "source_file": "components/Metrics.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "metrics.tsx",
-      "community_name": "Homepage Hero & Metrics",
-      "id": "components_metrics"
-    },
-    {
-      "label": "metricGroups",
-      "file_type": "code",
-      "source_file": "components/Metrics.tsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "metricgroups",
-      "community_name": "Homepage Hero & Metrics",
-      "id": "components_metrics_metricgroups"
-    },
-    {
-      "label": "Metrics()",
-      "file_type": "code",
-      "source_file": "components/Metrics.tsx",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "metrics()",
-      "community_name": "Homepage Hero & Metrics",
-      "id": "components_metrics_metrics"
-    },
-    {
       "label": "NetworkBackdrop.tsx",
       "file_type": "code",
       "source_file": "components/NetworkBackdrop.tsx",
@@ -1710,9 +1743,9 @@
       "source_file": "components/ProjectCard.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "projectcard.tsx",
-      "community_name": "Architecture Diagram UI",
+      "community_name": "Case Studies & Projects",
       "id": "components_projectcard"
     },
     {
@@ -1721,9 +1754,9 @@
       "source_file": "components/ProjectCard.tsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "props",
-      "community_name": "Architecture Diagram UI",
+      "community_name": "Case Studies & Projects",
       "id": "components_projectcard_props"
     },
     {
@@ -2508,39 +2541,6 @@
       "id": "types_architecture_architecturediagram"
     },
     {
-      "label": "project.ts",
-      "file_type": "code",
-      "source_file": "types/project.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "project.ts",
-      "community_name": "Architecture Diagram UI",
-      "id": "types_project"
-    },
-    {
-      "label": "ProjectCustomers",
-      "file_type": "code",
-      "source_file": "types/project.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "projectcustomers",
-      "community_name": "Architecture Diagram UI",
-      "id": "types_project_projectcustomers"
-    },
-    {
-      "label": "Project",
-      "file_type": "code",
-      "source_file": "types/project.ts",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "project",
-      "community_name": "Architecture Diagram UI",
-      "id": "types_project_project"
-    },
-    {
       "label": "vercel.json",
       "file_type": "code",
       "source_file": "vercel.json",
@@ -3029,175 +3029,50 @@
   ],
   "links": [
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "app_layout_metadata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L148",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "app_projects_slug_page_block",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "app_projects_slug_page_generatestaticparams",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "app_projects_slug_page_params",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "app_projects_slug_page_projectpage",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
+      "source_file": "app/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "data_projects",
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "components_metrics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Metrics.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_metrics",
+      "target": "components_metrics_metricgroups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Metrics.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_metrics",
+      "target": "components_metrics_metrics",
       "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/projects/[slug]/page.tsx",
+      "source_file": "app/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_projects_slug_page",
-      "target": "data_projects_projects",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
       "confidence_score": 1.0,
       "source": "app_page",
-      "target": "components_hero"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Hero.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_hero",
-      "target": "components_hero_headlinemetrics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Hero.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_hero",
-      "target": "components_hero_hero",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_milestones"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Milestones.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_milestones",
-      "target": "components_milestones_milestones",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Milestones.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_milestones",
-      "target": "data_experience",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Milestones.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_milestones",
-      "target": "data_experience_experience",
-      "confidence_score": 1.0
+      "target": "components_metrics_metrics"
     },
     {
       "relation": "imports_from",
@@ -3271,6 +3146,18 @@
       "target": "data_experience"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Milestones.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_milestones",
+      "target": "data_experience"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "data/experience.ts",
@@ -3329,6 +3216,18 @@
       "target": "data_experience_experience"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Milestones.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_milestones",
+      "target": "data_experience_experience"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3338,6 +3237,18 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "app_lib_aiknowledge",
+      "target": "data_projects"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
       "target": "data_projects"
     },
     {
@@ -3376,6 +3287,30 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "data/projects.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_projects",
+      "target": "types_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "data/projects.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_projects",
+      "target": "types_project_project",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3385,6 +3320,18 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "app_lib_aiknowledge",
+      "target": "data_projects_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
       "target": "data_projects_projects"
     },
     {
@@ -3410,6 +3357,187 @@
       "confidence_score": 1.0,
       "source": "components_casestudies",
       "target": "data_projects_projects"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ProjectCard.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_projectcard",
+      "target": "types_project"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/project.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "types_project",
+      "target": "types_project_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/project.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "types_project",
+      "target": "types_project_projectcustomers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ProjectCard.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_projectcard",
+      "target": "types_project_project"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ProjectCard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_projectcard_props",
+      "target": "types_project_project"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_layout",
+      "target": "app_layout_rootlayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
+      "target": "app_projects_slug_page_block"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
+      "target": "app_projects_slug_page_generatestaticparams"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
+      "target": "app_projects_slug_page_params"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/projects/[slug]/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_projects_slug_page",
+      "target": "app_projects_slug_page_projectpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "components_hero"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_headlinemetrics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_hero",
+      "target": "components_hero_hero"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "components_milestones"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Milestones.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "components_milestones",
+      "target": "components_milestones_milestones"
     },
     {
       "relation": "contains",
@@ -4462,30 +4590,6 @@
       "target": "app_page_home"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_metrics"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_page",
-      "target": "components_metrics_metrics"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/projects/page.tsx",
@@ -5056,28 +5160,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "components/Metrics.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_metrics",
-      "target": "components_metrics_metricgroups"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/Metrics.tsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_metrics",
-      "target": "components_metrics_metrics"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "components/NetworkBackdrop.tsx",
       "source_location": "L25",
       "weight": 1.0,
@@ -5140,42 +5222,6 @@
       "confidence_score": 1.0,
       "source": "components_projectcard",
       "target": "components_projectcard_props"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/ProjectCard.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_projectcard",
-      "target": "types_project"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/ProjectCard.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_projectcard",
-      "target": "types_project_project"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "components/ProjectCard.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "components_projectcard_props",
-      "target": "types_project_project"
     },
     {
       "relation": "contains",
@@ -5853,64 +5899,6 @@
       "target": "types_architecture_azurenodedata"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "types/project.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "types_project",
-      "target": "types_architecture"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "types/project.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "types_project",
-      "target": "types_architecture_architecturediagram"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "types/project.ts",
-      "source_location": "L27",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "types_project_project",
-      "target": "types_architecture_architecturediagram"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "types/project.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "types_project",
-      "target": "types_project_project"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "types/project.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "types_project",
-      "target": "types_project_projectcustomers"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vercel.json",
@@ -6572,5 +6560,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "7cf70ff39e90a6e3541e14da0afca32c044de532"
+  "built_at_commit": "f05aa0f59e741f07184217ef3dde5e14fbcfa74e"
 }

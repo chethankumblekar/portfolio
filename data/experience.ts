@@ -23,16 +23,14 @@ export const experience: ExperienceEntry[] = [
     current: true,
     headline: "Own production Azure infrastructure sustaining 99.7% uptime",
     summary:
-      "End-to-end ownership of production Azure infrastructure for a multi-tenant SaaS platform, spanning AKS, CI/CD, security, and observability, under 24x7 on-call, incident, and capacity management.",
+      "End-to-end ownership of production Azure infrastructure for a multi-tenant SaaS platform, under 24x7 on-call, incident, and capacity management.",
     impact: [
-      "Own end-to-end lifecycle of production Azure infrastructure, spanning AKS, CI/CD, security, and observability, sustaining 99.7% platform uptime under 24x7 on-call, including incident management, RCA, and capacity planning",
       "Designed and deployed a secure, customer-facing multi-tenant file delivery platform (ASP.NET Core Web API, React, Azure SQL, Blob Storage) serving 60+ tenants with high availability and security compliance",
       "Engineered identity and access management with Microsoft Entra ID, Google OAuth, and SSO, enforcing fine-grained RBAC for auditable, secure package delivery to external clients",
       "Architected Azure Virtual Desktop environments with FSLogix profile management and Conditional Access policies for secure, policy-enforced remote access",
       "Configured Azure Front Door with custom routing rules, WAF policies, and CDN integration, optimizing global traffic distribution and latency for a customer-facing platform",
       "Own 20+ YAML-based Azure DevOps pipelines across dev, staging, and production with zero-downtime deployments",
       "Implemented Prometheus and Grafana alongside Azure Monitor for full-stack observability, and built an orphaned-resource detection tool with automated alerts to cut wasted cloud spend",
-      "Rolled out GitHub Copilot and AI coding agents across engineering repositories to accelerate development workflows",
     ],
     systems: [
       "Multi-Tenant EDMS / File Delivery Platform",
@@ -57,7 +55,7 @@ export const experience: ExperienceEntry[] = [
       "Established Azure DevOps CI/CD pipelines from scratch, enforcing code quality standards, branch policies, and automated testing gates so only production-ready code shipped",
       "Developed frontend applications using React, TypeScript, and Redux-Saga for enterprise and customer-facing platforms",
       "Containerized applications using Docker and deployed workloads using Azure Container Instances and Azure Container Registry",
-      "Built a secure Client Share platform using ASP.NET Core and React, integrating Azure Blob Storage, Azure SQL, App Service, and Microsoft Entra ID-based SSO",
+      "Built a secure Client Share platform integrating Azure Blob Storage, Azure SQL, App Service, and Microsoft Entra ID-based SSO",
     ],
     systems: [
       "Enterprise EDMS Product",

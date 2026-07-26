@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 import {
   Activity,
   Server,
-  GitBranch,
   ShieldCheck,
   Cloud,
   Gauge,
-  Users,
   Wrench,
 } from "lucide-react";
 
@@ -16,9 +14,7 @@ const metricGroups = [
   {
     title: "Production Reliability",
     items: [
-      { value: "99.7%", label: "Platform Uptime", icon: Activity },
       { value: "24×7", label: "On-Call & Incident Response", icon: ShieldCheck },
-      { value: "20+", label: "CI/CD Pipelines Owned", icon: GitBranch },
       { value: "0", label: "Downtime Deployments", icon: Gauge },
     ],
   },
@@ -34,7 +30,6 @@ const metricGroups = [
   {
     title: "Scale & Impact",
     items: [
-      { value: "60+", label: "Tenant Platform", icon: Users },
       { value: "~90%", label: "Less Manual Provisioning", icon: Wrench },
       { value: "Multi-Tenant", label: "SaaS Architecture", icon: Cloud },
       { value: "Cost", label: "Optimization Tooling", icon: Activity },

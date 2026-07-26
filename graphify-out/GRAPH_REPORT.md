@@ -1,16 +1,16 @@
-# Graph Report - portfolio  (2026-07-25)
+# Graph Report - portfolio  (2026-07-26)
 
 ## Corpus Check
-- 52 files · ~15,128 words
+- 52 files · ~15,012 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 261 nodes · 313 edges · 25 communities (16 shown, 9 thin omitted)
+- 261 nodes · 312 edges · 26 communities (17 shown, 9 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7cf70ff3`
+- Built from commit: `f05aa0f5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,6 +36,7 @@
 - Vercel Framework Tag
 - AskAI.tsx
 - layout.tsx
+- aiKnowledge.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `portfolio-maintainer Agent Definition` - 21 edges
@@ -47,7 +48,7 @@
 7. `Ascertra — DevOps Engineer role (Jan 2025–Present, Bengaluru)` - 6 edges
 8. `experience` - 5 edges
 9. `projects` - 5 edges
-10. `Credentials()` - 4 edges
+10. `Project` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `README.md (Portfolio Overview)` --semantically_similar_to--> `Portfolio CLAUDE.md (root project instructions)`  [INFERRED] [semantically similar]
@@ -69,7 +70,7 @@
 - **Canonical career facts (Ascertra + Vela Technologies India roles) repeated consistently across CLAUDE.md, portfolio-maintainer.md and resume.pdf** — claude_overview, _claude_agents_portfolio_maintainer_overview, public_resume_overview, claude_ascertra_role, claude_vela_technologies_india_role [INFERRED 0.85]
 - **Headline resume metrics (uptime, tenants, pipelines, provisioning reduction) kept consistent across all three project docs** — claude_overview, _claude_agents_portfolio_maintainer_overview, public_resume_overview, claude_uptime_metric_997, claude_tenant_platform_metric_60, claude_cicd_pipeline_metric_20, claude_manual_provisioning_reduction_metric_90 [INFERRED 0.85]
 
-## Communities (25 total, 9 thin omitted)
+## Communities (26 total, 9 thin omitted)
 
 ### Community 0 - "Career Facts & Docs"
 Cohesion: 0.13
@@ -84,8 +85,8 @@ Cohesion: 0.07
 Nodes (29): framer-motion, geist, iconify, @iconify/react, lucide-react, next, openai, dependencies (+21 more)
 
 ### Community 4 - "Case Studies & Projects"
-Cohesion: 0.11
-Nodes (10): POST(), aiKnowledge, education, experienceSummary, profile, projectsSummary, buildPrompt(), Params (+2 more)
+Cohesion: 0.15
+Nodes (6): Params, ProjectCard(), Props, projects, Project, ProjectCustomers
 
 ### Community 5 - "Experience & Milestones"
 Cohesion: 0.12
@@ -100,8 +101,8 @@ Cohesion: 0.11
 Nodes (19): dom, dom.iterable, esnext, compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules (+11 more)
 
 ### Community 9 - "Architecture Diagram UI"
-Cohesion: 0.21
-Nodes (9): nodeTypes, Props, Props, ArchitectureDiagram, AzureEdge, AzureNode, AzureNodeData, Project (+1 more)
+Cohesion: 0.29
+Nodes (6): nodeTypes, Props, ArchitectureDiagram, AzureEdge, AzureNode, AzureNodeData
 
 ### Community 10 - "Package Scripts"
 Cohesion: 0.14
@@ -119,12 +120,16 @@ Nodes (4): headlineMetrics, metricGroups, Metrics(), Pillars
 Cohesion: 0.43
 Nodes (5): useAI(), FloatingAIChat(), Message, sectionFromPathname(), sectionLabels
 
+### Community 25 - "aiKnowledge.ts"
+Cohesion: 0.27
+Nodes (7): POST(), aiKnowledge, education, experienceSummary, profile, projectsSummary, buildPrompt()
+
 ## Ambiguous Edges - Review These
 - `Chethan K Resume (public/resume.pdf)` → `RESUME_LINK / /resume route (links to Drive PDF; CLAUDE.md states no local resume.pdf exists)`  [AMBIGUOUS]
   CLAUDE.md · relation: references
 
 ## Knowledge Gaps
-- **100 isolated node(s):** `metadata`, `Params`, `headlineMetrics`, `ExperienceEntry`, `name` (+95 more)
+- **101 isolated node(s):** `metricGroups`, `ExperienceEntry`, `ProjectCustomers`, `metadata`, `Params` (+96 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -137,10 +142,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.047) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `ESLint / Lint Tooling` to `Package Scripts`?**
   _High betweenness centrality (0.047) - this node is a cross-community bridge._
-- **Why does `experience` connect `Experience & Milestones` to `Case Studies & Projects`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
-- **What connects `metadata`, `Params`, `headlineMetrics` to the rest of the system?**
-  _100 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `experience` connect `Experience & Milestones` to `aiKnowledge.ts`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **What connects `metricGroups`, `ExperienceEntry`, `ProjectCustomers` to the rest of the system?**
+  _101 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Career Facts & Docs` be split into smaller, more focused modules?**
   _Cohesion score 0.12688172043010754 - nodes in this community are weakly interconnected._
 - **Should `ESLint / Lint Tooling` be split into smaller, more focused modules?**

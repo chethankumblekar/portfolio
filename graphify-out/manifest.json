@@ -115,9 +115,9 @@
     "semantic_hash": ""
   },
   "components/Metrics.tsx": {
-    "mtime": 1784177395.967064,
-    "ast_hash": "f69b4ac2593c597d895d61061a4604ff",
-    "semantic_hash": "f69b4ac2593c597d895d61061a4604ff"
+    "mtime": 1785076030.6863165,
+    "ast_hash": "250ef3870416b5daf89d8e32de5eb434",
+    "semantic_hash": ""
   },
   "components/Milestones.tsx": {
     "mtime": 1784973289.2305055,
@@ -130,8 +130,8 @@
     "semantic_hash": "b0c377c0789a1ce72bf6502555cea7a5"
   },
   "components/Pillars.tsx": {
-    "mtime": 1784973695.5933542,
-    "ast_hash": "d3ccea21bac72acc55559867393f58d7",
+    "mtime": 1785089035.9170434,
+    "ast_hash": "12656543d817f297cc95d9cb1ee83ed5",
     "semantic_hash": ""
   },
   "components/ProjectCard.tsx": {
@@ -160,13 +160,13 @@
     "semantic_hash": "8d26a73dcbf67ee828e3d16ac1df02e5"
   },
   "data/experience.ts": {
-    "mtime": 1784973768.3256576,
-    "ast_hash": "fd905ac0b59326d120ffe076755b090d",
+    "mtime": 1785071891.4736223,
+    "ast_hash": "19552d93ff77f2b689125130f7a7e1c9",
     "semantic_hash": ""
   },
   "data/projects.ts": {
-    "mtime": 1784975095.08877,
-    "ast_hash": "e0d295ce89dd26e72a3d6ebbfa92eb7c",
+    "mtime": 1785072642.9900734,
+    "ast_hash": "fe1506b91a9e3f34b813d06cab84b468",
     "semantic_hash": ""
   },
   "data/skills.ts": {
@@ -190,9 +190,9 @@
     "semantic_hash": "6fab9cbf1b23423b57b2f99bdc2c3313"
   },
   "next-env.d.ts": {
-    "mtime": 1784975311.986361,
-    "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
-    "semantic_hash": "2a74d3909800ca5467fa83b0ab4a4890"
+    "mtime": 1785089422.4745739,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "semantic_hash": ""
   },
   "next.config.ts": {
     "mtime": 1784177395.9744322,
@@ -230,9 +230,9 @@
     "semantic_hash": "c95ba9b82cf00d308dafe6d7cf62cc5c"
   },
   "types/project.ts": {
-    "mtime": 1784177396.0065184,
-    "ast_hash": "1f9f516338563df765670d5c43e56e0c",
-    "semantic_hash": "1f9f516338563df765670d5c43e56e0c"
+    "mtime": 1785072655.3902388,
+    "ast_hash": "a1a77b2f4a15f5a911efdf68068bfb81",
+    "semantic_hash": ""
   },
   "vercel.json": {
     "mtime": 1784177396.0088885,
@@ -268,5 +268,10 @@
     "mtime": 1784177395.981465,
     "ast_hash": "edc52f159a811be5ce4f9d09ecf268d6",
     "semantic_hash": "edc52f159a811be5ce4f9d09ecf268d6"
+  },
+  "public/logo.svg": {
+    "mtime": 1784986450.269423,
+    "ast_hash": "862904325c267f5104543974435ecaa0",
+    "semantic_hash": ""
   }
 }
